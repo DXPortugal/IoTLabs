@@ -1,5 +1,3 @@
-# Windows 10 IOT Core Beginners Walkthrough using Raspberry Pi 2 and the Fez Hat
-
 In this walkthrough you learn all about
 
 1\. [Raspberry Pi 2](https://www.raspberrypi.org/products/raspberry-pi-2-model-b/) device with [Windows 10 Iot Core](http://ms-iot.github.io/content/en-US/Downloads.htm)  
