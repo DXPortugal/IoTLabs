@@ -9,11 +9,13 @@
 Microsoft was at Web Summit and on our booth we had IoT Labs running every day, for which you could register in advance. They were a ***HUGE*** success - registrations sold out in less than 4 hours!
 So we set out to deliver new labs in Portugal. Well, here they are!
 
-```
-Goal: Allow you to participate and try out Internet of Things (IoT) with **Microsoft** and **Raspberry Pi 3**! 
-```
+> Goal: Allow you to try out Internet of Things (IoT) with **Microsoft** and **Raspberry Pi 3**! 
+
+<iframe width="512" height="288" src="https://www.youtube.com/embed/h7B4_s4hvvc" frameborder="0" allowfullscreen></iframe>
 
 Take a look at this starting page, and then head to the [Labs](./content/readme.md).
+
+Share your progress with our official hashtags: **#ptiotlabs #MicrosoftPortugal**
 
 ### Table of contents
  * [Table of Contents](#table-of-contents)
