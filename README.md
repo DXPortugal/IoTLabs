@@ -7,21 +7,23 @@
 ### Welcome!
 
 Microsoft was at Web Summit and on our booth we had IoT Labs running every day, for which you could register in advance. They were a ***HUGE*** success - registrations sold out in less than 4 hours!
-
 So we set out to deliver new labs in Portugal. Well, here they are!
 
+```
 Goal: Allow you to participate and try out Internet of Things (IoT) with **Microsoft** and **Raspberry Pi 3**! 
+```
 
-Take a look at this starting page, and then head to the Labs.
+Take a look at this starting page, and then head to the [Labs](./content/readme.md).
 
 ### Table of contents
  * [Table of Contents](#table-of-contents)
  * [Portuguese Community](#portuguese-community)
  * [Teams](#teams)
  * [Requirements](#requirements)
- * [Labs](./content/readme.md)
  * [Azure Pass](#azure-pass)
+ * [Labs](./content/readme.md)
  * [Azure and IoT](./content/azure-and-iot.md) **(Recommended Reading)**
+ * [Conclusion & Next Steps](#conclusions-next-steps)
 
 The **IoT Labs** use Windows 10 IoT, typically running on a Raspberry Pi 2 or 3, although other boards are also capable of running Windows 10 IoT. If you will be going through any of these labs you need to first prepare your **development environment**.
 
@@ -36,9 +38,8 @@ The maker community is growing everyday! From startups, freelancers to hobbbyist
 
 ### [Teams](#teams)
 
-
 ### [Requirements](#requirements)
-### [Labs](#labs)
+
 ### [Azure Pass](#azure-pass)
 
 The Azure Pass allow you to access and use Microsoft Azure withou any feature limitation. You can redeem promo codes via the redemption site, [www.microsoftazurepass.com](www.microsoftazurepass.com), which entitles you to activate the your Azure account. 
@@ -46,9 +47,12 @@ Passes are limited to 1-month, $100, whichever comes first. Unlike the Azure Acc
 
 [Reedeem you Microsoft Azure Pass here](http://www.microsoftazurepass.com/)
 
+### [Labs](#labs)
+
+
 ---
 
-### Conclusion & Next Steps
+### [Conclusion & Next Steps](#conclusions-next-steps)
 In this IoT Labs, you learned about general IoT practices with Windows 10 IoT, Linux and several development languages like C# and javascript.
 
 As you already understood, IoT can be fun and always takes you into prototyping. There are several projects shared by the community that can help implement you project. We'd like to leave a set of resource you may find usefull.
