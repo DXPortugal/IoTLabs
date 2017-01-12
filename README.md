@@ -4,6 +4,8 @@
 ![IoT Labs][general-logo-porto]
 ![IoT Labs][general-logo-lisboa]-->
 
+# Welcome!
+
 Microsoft was at Web Summit and on our booth we had IoT Labs running every day, for which you could register in advance. They were a ***HUGE*** success - registrations sold out in less than 4 hours!
 
 So we set out to deliver new labs in Portugal. Well, here they are!
@@ -13,17 +15,17 @@ Goal: Allow you to participate and try out Internet of Things (IoT) with **Micro
 Take a look at this starting page, and then head to the Labs.
 
 # Table of contents
-[Table of Contents](#table-of-contents)
-[Portuguese Community](#portuguese-community)
-[Teams](#azure-pass)
-[Requirements](#azure-pass)
-[Labs](./content/readme.md#azure-pass)
-[Azure Pass](#azure-pass)
-[Azure and IoT](./content/azure-and-iot.md) **(Recommended Reading)**
+ * [Table of Contents](#table-of-contents)
+ * [Portuguese Community](#portuguese-community)
+ * [Teams](#teams)
+ * [Requirements](#requirements)
+ * [Labs](./content/readme.md)
+ * [Azure Pass](#azure-pass)
+ * [Azure and IoT](./content/azure-and-iot.md) **(Recommended Reading)**
 
 The **IoT Labs** use Windows 10 IoT, typically running on a Raspberry Pi 2 or 3, although other boards are also capable of running Windows 10 IoT. If you will be going through any of these labs you need to first prepare your **development environment**.
 
-# [Portuguese Community](#portuguese-community)
+## [Portuguese Community](#portuguese-community)
 
 The maker community is growing everyday! From startups, freelancers to hobbbyists all Makers intend to discuss new ideas, hot to prototype, share projects, select partners and suppliers, plan projects and event get funding. Here we leave you a way to participate in this community:
 
@@ -32,12 +34,17 @@ The maker community is growing everyday! From startups, freelancers to hobbbyist
  * [Arduino Portugal](http://www.arduinoportugal.pt/) - Portuguese Makers community around Arduino. 
 
 
-# [Teams](#teams)
+## [Teams](#teams)
 
 
-# [Requirements](#requirements)
-# [Labs](#labs)
-# [Azure Pass](#azure-pass)
+## [Requirements](#requirements)
+## [Labs](#labs)
+## [Azure Pass](#azure-pass)
+
+The Azure Pass allow you to access and use Microsoft Azure withou any feature limitation. You can redeem promo codes via the redemption site, [www.microsoftazurepass.com](www.microsoftazurepass.com), which entitles you to activate the your Azure account. 
+Passes are limited to 1-month, $100, whichever comes first. Unlike the Azure Access program. Azure passes do not require customer credit card information. Azure passes are typically used for customer PoC’s, field and partner training events, marketing campaigns, and other events.  
+
+[Reedeem you Microsoft Azure Pass here](http://www.microsoftazurepass.com/)
 
 ---
 
@@ -53,7 +60,9 @@ As you already understood, IoT can be fun and always takes you into prototyping.
  * [Instructables](http://www.instructables.com/howto/iot/) - The seeds of Instructables germinated at the MIT Media Lab as the future founders of Squid Labs built places to share their projects, connect with others, and make an impact on the world.
  * [DIYhacking](https://diyhacking.com/about-diy-hacking/) - DIY Hacking (Do It Yourself!) is a non-profit Indian organisation working to promote the Maker culture. 
 
-And remember, when you finish any personal project, please share with Microsoft Portugal. We'll provide you guidance and help you and your projecto to get to the next level!
+And remember, when running your personal project, please ***share*** with Microsoft Portugal. We'll provide you guidance and help you and your projecto to get to the next level!
+
+***Enjoy the Labs!***
 
 [general-logo]: ./images/banner-geral.png "IoT Labs"
 [general-logo-guarda]: ./images/banner-guarda.png "IoT Labs"
