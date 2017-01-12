@@ -4,7 +4,7 @@
 ![IoT Labs][general-logo-porto]
 ![IoT Labs][general-logo-lisboa]-->
 
-# Welcome!
+### Welcome!
 
 Microsoft was at Web Summit and on our booth we had IoT Labs running every day, for which you could register in advance. They were a ***HUGE*** success - registrations sold out in less than 4 hours!
 
@@ -14,7 +14,7 @@ Goal: Allow you to participate and try out Internet of Things (IoT) with **Micro
 
 Take a look at this starting page, and then head to the Labs.
 
-# Table of contents
+### Table of contents
  * [Table of Contents](#table-of-contents)
  * [Portuguese Community](#portuguese-community)
  * [Teams](#teams)
@@ -25,7 +25,7 @@ Take a look at this starting page, and then head to the Labs.
 
 The **IoT Labs** use Windows 10 IoT, typically running on a Raspberry Pi 2 or 3, although other boards are also capable of running Windows 10 IoT. If you will be going through any of these labs you need to first prepare your **development environment**.
 
-## [Portuguese Community](#portuguese-community)
+### [Portuguese Community](#portuguese-community)
 
 The maker community is growing everyday! From startups, freelancers to hobbbyists all Makers intend to discuss new ideas, hot to prototype, share projects, select partners and suppliers, plan projects and event get funding. Here we leave you a way to participate in this community:
 
@@ -34,12 +34,12 @@ The maker community is growing everyday! From startups, freelancers to hobbbyist
  * [Arduino Portugal](http://www.arduinoportugal.pt/) - Portuguese Makers community around Arduino. 
 
 
-## [Teams](#teams)
+### [Teams](#teams)
 
 
-## [Requirements](#requirements)
-## [Labs](#labs)
-## [Azure Pass](#azure-pass)
+### [Requirements](#requirements)
+### [Labs](#labs)
+### [Azure Pass](#azure-pass)
 
 The Azure Pass allow you to access and use Microsoft Azure withou any feature limitation. You can redeem promo codes via the redemption site, [www.microsoftazurepass.com](www.microsoftazurepass.com), which entitles you to activate the your Azure account. 
 Passes are limited to 1-month, $100, whichever comes first. Unlike the Azure Access program. Azure passes do not require customer credit card information. Azure passes are typically used for customer PoC’s, field and partner training events, marketing campaigns, and other events.  
@@ -48,7 +48,7 @@ Passes are limited to 1-month, $100, whichever comes first. Unlike the Azure Acc
 
 ---
 
-## Conclusion & Next Steps
+### Conclusion & Next Steps
 In this IoT Labs, you learned about general IoT practices with Windows 10 IoT, Linux and several development languages like C# and javascript.
 
 As you already understood, IoT can be fun and always takes you into prototyping. There are several projects shared by the community that can help implement you project. We'd like to leave a set of resource you may find usefull.
