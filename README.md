@@ -13,6 +13,9 @@ So we set out to deliver new labs in Portugal. Well, here they are!
 
 <iframe width="512" height="288" src="https://www.youtube.com/embed/h7B4_s4hvvc" frameborder="0" allowfullscreen></iframe>
 <iframe width="854" height="480" src="https://www.youtube.com/embed/h7B4_s4hvvc" frameborder="0" allowfullscreen></iframe>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=h7B4_s4hvvc
+" target="_blank"><img src="http://img.youtube.com/vi/h7B4_s4hvvc/0.jpg" 
+alt="Microsoft's Maker Garage, Devices Science Fair, and Maker Space unveiled" width="240" height="180" border="1" /></a>
 
 Take a look at this starting page, and then head to the [Labs](./content/readme.md). And remember: Share your progress with our official hashtags: **#ptiotlabs #MicrosoftPortugal**
 
