@@ -12,9 +12,7 @@ So we set out to deliver new labs in Portugal. Well, here they are!
 > Goal: Allow you to try out Internet of Things (IoT) with **Microsoft** and **Raspberry Pi 3**! 
 
 Watch this video to get inspired! 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=h7B4_s4hvvc" target="_blank"><img src="http://img.youtube.com/vi/h7B4_s4hvvc/0.jpg" alt="" width="512" height="288" border="0" /></a>
-
-[![Microsoft's Maker Garage, Devices Science Fair, and Maker Space unveiled](https://img.youtube.com/vi/h7B4_s4hvvc/0.jpg)](https://www.youtube.com/watch?v=h7B4_s4hvvc){:target="_blank"}
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=h7B4_s4hvvc" target="_blank"><img src="http://img.youtube.com/vi/h7B4_s4hvvc/0.jpg" alt="" width="854" height="480" border="0" /></a>
 
 Take a look at this starting page, and then head to the [Labs](./content/readme.md). And remember: Share your progress with our official hashtags: **#ptiotlabs #MicrosoftPortugal**
 
