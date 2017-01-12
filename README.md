@@ -12,10 +12,9 @@ So we set out to deliver new labs in Portugal. Well, here they are!
 > Goal: Allow you to try out Internet of Things (IoT) with **Microsoft** and **Raspberry Pi 3**! 
 
 <iframe width="512" height="288" src="https://www.youtube.com/embed/h7B4_s4hvvc" frameborder="0" allowfullscreen></iframe>
+<iframe width="854" height="480" src="https://www.youtube.com/embed/h7B4_s4hvvc" frameborder="0" allowfullscreen></iframe>
 
-Take a look at this starting page, and then head to the [Labs](./content/readme.md).
-
-Share your progress with our official hashtags: **#ptiotlabs #MicrosoftPortugal**
+Take a look at this starting page, and then head to the [Labs](./content/readme.md). And remember: Share your progress with our official hashtags: **#ptiotlabs #MicrosoftPortugal**
 
 ### Table of contents
  * [Table of Contents](#table-of-contents)
