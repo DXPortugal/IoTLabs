@@ -65,7 +65,7 @@ For more information, and how to install and use it, read [here](https://docs.mi
 
 ## Azure and command-line ##
 
-If your Operating System is not Windows, then you may want to use **Azure Command-Line Interface (Azure CLI)**. It's a set of open-source shell-based commands for creating and managing resources in Microsoft Azure. You may run it in you Linux or macOS machine. To install you can follow several options:
+If your Operating System is not Windows, then you may want to use **[Azure Command-Line Interface (Azure CLI)](https://docs.microsoft.com/en-us/azure/xplat-cli-install)**. It's a set of open-source shell-based commands for creating and managing resources in Microsoft Azure. You may run it in you Linux or macOS machine. To install you can follow several options:
 
 - **npm package** - Run npm (the package manager for JavaScript) to install the latest Azure CLI package on your Linux distribution or OS. Requires node.js and npm on your computer.
 - **Installer** - Download an installer for easy installation on Mac or Windows.
