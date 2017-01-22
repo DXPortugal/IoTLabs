@@ -3,7 +3,8 @@
 In this lab, you begin by learning the basics of working with Raspberry Pi 3 that's running Raspbian. You then learn how to seamlessly connect your devices to the cloud by using Azure IoT Hub.
 
 ###Configure your device and get the tools
-[In this lab](/content/lab-2-configure-your-device-and-get-the-tools.md) you will Configure Raspberry Pi 3 for first-time use and install Raspbian. Raspbian is a free operating system that is optimized for the Raspberry Pi hardware. Download the tools and software to build and deploy your first application for Raspberry Pi 3. Estimated time to complete: **50-minutes**.
+[In this lab](/content/lab-2-configure-your-device-and-get-the-tools.md) you will Configure Raspberry Pi 3 for first-time use and install Raspbian. Raspbian is a free operating system that is optimized for the Raspberry Pi hardware. Download the tools and software to build and deploy your first application for Raspberry Pi 3. 
+Estimated time to complete: **50-minutes**.
 
 ###Lab 2.1: Create and deploy the blink application!
 [In this lab](/content/lab-2-1-create-and-deploy-the-blink-application.md) you will clone the sample Node.js blink application from GitHub, and use gulp to deploy this application to your Raspberry Pi 3 board. This sample application blinks the LED connected to the board every two seconds.
