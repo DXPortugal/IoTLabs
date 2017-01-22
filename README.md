@@ -9,11 +9,11 @@
 Microsoft was at Web Summit and on our booth we had IoT Labs running every day, for which you could register in advance. They were a ***HUGE*** success - registrations sold out in less than 4 hours!
 So we set out to deliver new labs in Portugal. Well, here they are!
 
-> Goal: Allow you to try out Internet of Things (IoT) with **Microsoft** and **Raspberry Pi 3**! 
+> Goal: Allow you to try out Internet of Things (IoT) with **Microsoft** and **Raspberry Pi 3**!
 
 Watch this video to get inspired!
 
- <a href="http://www.youtube.com/watch?feature=player_embedded&v=h7B4_s4hvvc" target="_blank"><img src="./images/the-garage-video.png" alt="" width="512" height="288" border="0" /></a>
+<a href="https://www.youtube.com/watch?v=h7B4_s4hvvc" target="_blank"><img src="./images/the-garage-video.png" alt="" width="512" height="288" border="0" /></a>
 
 Take a look at this starting page, and then head to the [Labs](./content/readme.md). And remember: Share your progress with our official hashtags: **#ptiotlabs #MicrosoftPortugal**
 
@@ -75,10 +75,10 @@ We have a **total of 15 IoT Kits** and plenty of sensors. We ask everyone to **m
 
 ### [Azure Pass](#azure-pass)
 
-The Azure Pass allow you to access and use Microsoft Azure withou any feature limitation. You can redeem promo codes via the redemption site, [www.microsoftazurepass.com](www.microsoftazurepass.com), which entitles you to activate the your Azure account. 
-Passes are limited to *1-month*, *$100*, whichever comes first. Unlike the Azure Access program. Azure passes do not require customer credit card information. Azure passes are typically used for customer PoC’s, field and partner training events, marketing campaigns, and other events.  
+The Azure Pass allow you to access and use Microsoft Azure without any feature limitation. You can redeem promo codes via the redemption site, [www.microsoftazurepass.com](https://www.microsoftazurepass.com/), which entitles you to activate the Azure account. 
+Passes are limited to 1-month, $100, whichever comes first. Unlike the Azure Access program. Azure passes do not require your credit card information. Azure passes are typically used for customer PoC’s, field and partner training events, marketing campaigns, and other events.  
 
-[Reedeem you Microsoft Azure Pass here](http://www.microsoftazurepass.com/)
+[Redeem you Microsoft Azure Pass here](https://www.microsoftazurepass.com/)
 
 ### [Labs](#labs)
 
@@ -97,18 +97,18 @@ The maker community is growing everyday! From startups, freelancers to hobbbyist
 ---
 
 ### [Conclusion & Next Steps](#conclusions-next-steps)
-In this IoT Labs, you learned about general IoT practices with Windows 10 IoT, Linux and several development languages like C# and javascript.
+In this IoT Labs, you learned about general IoT practices with Windows 10 IoT, Linux and several development languages like C# and JavaScript.
 
-As you already understood, IoT can be fun and always takes you into prototyping. There are several projects shared by the community that can help implement you project. We'd like to leave a set of resource you may find usefull.
- * [Hackster.io](https://www.hackster.io/) - Hackster is a community dedicated to learning hardware.
- * [Maker Faire](http://makerfaire.com/) - Maker Faire is the Greatest Show (and Tell) on Earth—a family-friendly festival of invention, creativity and resourcefulness, and a celebration of the Maker movement.
- * [Make:](http://makezine.com/projects/) - Maker Media is a global platform for connecting Makers.
+As you already understood, IoT can be fun and always takes you into prototyping. There are several projects shared by the community that can help implement you project. We'd like to leave a set of resource you may find useful.
+ * [Hackster.io](https://www.hackster.io/) - Hackster is a community dedicated to learning hardware
+ * [Maker Faire](https://makerfaire.com/) - Maker Faire is the Greatest Show (and Tell) on Earth—a family-friendly festival of invention, creativity and resourcefulness, and a celebration of the Maker movement
+ * [Make:](https://makezine.com/projects/) - Maker Media is a global platform for connecting Makers
  * [ConnectTheDots.io](http://connectthedots.io) - An open source project created by Microsoft to help you get tiny devices connected to Microsoft Azure IoT and to implement great IoT solutions taking advantage of Microsoft Azure advanced analytic services such as Azure Stream Analytics and Azure Machine Learning
- * [fritzing](http://fritzing.org/) - Fritzing is an open-source hardware initiative that makes electronics accessible as a creative material for anyone.
- * [Instructables](http://www.instructables.com/howto/iot/) - The seeds of Instructables germinated at the MIT Media Lab as the future founders of Squid Labs built places to share their projects, connect with others, and make an impact on the world.
- * [DIYhacking](https://diyhacking.com/about-diy-hacking/) - DIY Hacking (Do It Yourself!) is a non-profit Indian organisation working to promote the Maker culture. 
+ * [Fritzing](http://fritzing.org/) - Fritzing is an open-source hardware initiative that makes electronics accessible as a creative material for anyone
+ * [Instructables](https://www.instructables.com/howto/iot/) - The seeds of Instructables germinated at the MIT Media Lab as the future founders of Squid Labs built places to share their projects, connect with others, and make an impact on the world
+ * [DIYhacking](https://diyhacking.com/about-diy-hacking/) - DIY Hacking (Do It Yourself!) is a non-profit Indian organization working to promote the Maker culture
 
-And remember, when running your personal project, please ***share*** with Microsoft Portugal. We'll provide you guidance and help you and your projecto to get to the next level!
+And remember, when running your personal project, please ***share*** with Microsoft Portugal. We'll provide you guidance and help you and your project to get to the next level!
 
 ***Enjoy the Labs!***
 
