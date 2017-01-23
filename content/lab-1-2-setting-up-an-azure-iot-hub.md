@@ -81,5 +81,11 @@ Back to [Lab 1 - Windows IoT](/content/lab-1-windows-iot.md)
 
 Back to [IoT Labs homepage](/readme.md)
 
+---
+
+*[9gag:](http://9gag.com/) Sorry for  the long post, here's a [potato](https://www.quora.com/What-does-Sorry-for-the-long-post-heres-a-potato-mean-in-9GAG):*
+
+![9gag Potato](/images/potato04.jpg)
+
 [nextlab]: /content/lab-1-3-sending-telemetry-to-the-cloud.md
 [deviceexplorer]: https://github.com/Azure/azure-iot-sdks/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md

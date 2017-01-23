@@ -121,6 +121,12 @@ Back to [Lab 2 - IoT with Linux and Node.js](/content/lab-2-linux-node-iot.md)
 
 Back to [IoT Labs homepage](/readme.md)
 
+---
+
+*[9gag:](http://9gag.com/) Sorry for  the long post, here's a [potato](https://www.quora.com/What-does-Sorry-for-the-long-post-heres-a-potato-mean-in-9GAG):*
+
+![9gag Potato](/images/potato06.jpg)
+
 [lab2-material]: ./images/lab2_material.jpg "Lab 2 Material"
 [lab2-sdcard]: ./images/lab2_sdcard.jpg "Lab 2 Insert SD Card"
 [lab2-power]: ./images/lab2_power.jpg "Lab 2 Turn on you Rpi3"

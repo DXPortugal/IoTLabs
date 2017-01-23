@@ -140,3 +140,9 @@ Back to [Lab 1 - Windows IoT](/content/lab-1-windows-iot.md)
 
 Back to [IoT Labs homepage](/readme.md)
 
+---
+
+*[9gag:](http://9gag.com/) Sorry for  the long post, here's a [potato](https://www.quora.com/What-does-Sorry-for-the-long-post-heres-a-potato-mean-in-9GAG):*
+
+![9gag Potato](/images/potato06.jpg)
+

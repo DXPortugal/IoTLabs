@@ -84,4 +84,10 @@ Back to [Lab 2 - IoT with Linux and Node.js](/content/lab-2-linux-node-iot.md)
 
 Back to [IoT Labs homepage](/readme.md)
 
+---
+
+*[9gag:](http://9gag.com/) Sorry for  the long post, here's a [potato](https://www.quora.com/What-does-Sorry-for-the-long-post-heres-a-potato-mean-in-9GAG):*
+
+![9gag Potato](/images/potato08.jpg)
+
 [nextlab]: /content/lab-2-3-send-device-to-cloud-messages.md
