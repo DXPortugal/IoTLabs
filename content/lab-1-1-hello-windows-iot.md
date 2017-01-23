@@ -4,13 +4,13 @@
 In this lab you will create a simple _Thing_ using the Universal Windows Platform on a Windows 10 IoT device. 
 
 # Wire Up the Device
-The Raspberry Pi 2 connects to the physical world through the GPIO pins. GPIO stands for General Purpose Input/Output and refers to the two rows of pins on the Raspberry Pi 2. The GPIO pins are a physical interface between the Raspberry Pi 2 and the physical world. Through your app you can designate pins to either receive input or send output. The inputs can be from switches, sensors or other devices. The outputs can be LEDs, servos, motors or countless other devices. Twenty-six of the 40 pins are GPIO pins; the others are power, ground, or reserved pins.
+The Raspberry Pi 3 connects to the physical world through the GPIO pins. GPIO stands for General Purpose Input/Output and refers to the two rows of pins on the Raspberry Pi 3. The GPIO pins are a physical interface between the Raspberry Pi 3 and the physical world. Through your app you can designate pins to either receive input or send output. The inputs can be from switches, sensors or other devices. The outputs can be LEDs, servos, motors or countless other devices. Twenty-six of the 40 pins are GPIO pins; the others are power, ground, or reserved pins.
 
-![Raspberry Pi 2 pin Map](/images/rpi2/rpi12_pinout.png)
+![Raspberry Pi 3 pin Map](/images/RPi3/rpi12_pinout.png)
 
-Wire the Raspberry Pi 2 to  the solderless breadboard as  described below.
+Wire the Raspberry Pi 3 to  the solderless breadboard as  described below.
 
-![Blinky/Hello, World Wiring](/images/rpi2/rpi2_hello_windows_bb.png)
+![Blinky/Hello, World Wiring](/images/RPi3/RPi3_hello_windows_bb.png)
 
 1. GPIO 12 is connected to the positive (longer) lead on the LED. In the app you will build in this workshop, you will control whether or not GPIO pin 12 sends voltage over the circuit.
 2. The negative (shorter) lead on the LED is connected to a resistor to reduce the amount of voltage pulled through the circuit.
@@ -19,23 +19,23 @@ Wire the Raspberry Pi 2 to  the solderless breadboard as  described below.
 The LED will light up when current is passed through the circuit by the app you will build. Because that app isn't created yet, the LED doesn't do anything right now.
 
 # Create an Application using the Universal Windows Platform
-A Universal Windows app is a Windows experience that is built upon the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. The UWP enables you to write an app that targets a device family, such as IoT devices. In fact, the Universal app that you write may be able to run on multiple devices families, depending on the device characteristics that it takes advantage of. In this lab you will create a Universal app targeting IoT devices running Windows 10. In theory this could be nearly any device, such as a phone, a tablet or a Raspberry Pi 2. The Universal app you will write, however, will access the General Purpose Input/Output (GPIO) of the device, so the app won't be compatible with devices that don't have a GPIO.   
+A Universal Windows app is a Windows experience that is built upon the Universal Windows Platform (UWP), which was first introduced in Windows 8 as the Windows Runtime. The UWP enables you to write an app that targets a device family, such as IoT devices. In fact, the Universal app that you write may be able to run on multiple devices families, depending on the device characteristics that it takes advantage of. In this lab you will create a Universal app targeting IoT devices running Windows 10. In theory this could be nearly any device, such as a phone, a tablet or a Raspberry Pi 3. The Universal app you will write, however, will access the General Purpose Input/Output (GPIO) of the device, so the app won't be compatible with devices that don't have a GPIO.   
 
 ## Create a Blank Universal App
 
 1. Launch Visual Studio and start a new __Blank App (Universal Windows)__ (found in the _C# -> Windows -> Universal_ node).
 2. Name the application _HelloWindowsIoT_.
 
-![Create a blank Universal Windows Application](/images/rpi2/rpi2_new_universal.png)
+![Create a blank Universal Windows Application](/images/RPi3/RPi3_new_universal.png)
 
 ## Add the Windows IoT Extensions for the UWP
 The _Windows IoT Extenstions for the UWP_ are not included in a new Blank Application by default. The IoT extensions enable namespaces, such as <code>Windows.Devices.Gpio</code> to be referenced and uses in the application. You must add a reference to the _Windows IoT Extensions for the UWP_.
 
  1. Click on the _Project_ menu and select _Add Reference_.
  2. In the Reference Manager dialog, expand the _Universal Windows_ node and select _Extensions_.
- 3. In the list of extensions,check the box next to _Windows IoT Extensions for the UWP_ and click __OK__. (Make sure to select the same version number as the OS running on the Raspberry Pi 2.) It is easy to accidently select the _Windows Mobile Extensions for the UWP_, (which is just below the IoT extensions) so take extra care to make sure you have added the correct reference.
+ 3. In the list of extensions,check the box next to _Windows IoT Extensions for the UWP_ and click __OK__. (Make sure to select the same version number as the OS running on the Raspberry Pi 3.) It is easy to accidently select the _Windows Mobile Extensions for the UWP_, (which is just below the IoT extensions) so take extra care to make sure you have added the correct reference.
  
-![Add the Windows IoT Extensions for the UWP](/images/rpi2/rpi2_install_iotextensions.png)
+![Add the Windows IoT Extensions for the UWP](/images/RPi3/RPi3_install_iotextensions.png)
 
 ## Design the App UI
 This application has a UI that duplicates what is happening with the hardware. (It has a blinking virtual LED on-screen.)
@@ -63,7 +63,7 @@ Throughout this lab you will use a feature in Visual Studio called _light bulbs_
 {% highlight csharp %}
 // Enable asynchronous tasks
 using System.Threading.Tasks;
-// Enable access to the GPIO bus on the Raspberry Pi 2
+// Enable access to the GPIO bus on the Raspberry Pi 3
 using Windows.Devices.Gpio;
 {% endhighlight %}
 
@@ -122,7 +122,7 @@ You can create an event handler that will fire every time the _Timer.Tick_ event
 1. Hover the mouse over the _Timer\_Tick_ reference until a light bulb appears. 
 2. Click the down arrow and select _Generate method 'MainPage.Timer\_Tick'_. 
 
-![Using Visual Studio light bulb refactoring](/images/rpi2/rpi2_lab01_Timer_Tick.PNG)
+![Using Visual Studio light bulb refactoring](/images/RPi3/RPi3_lab01_Timer_Tick.PNG)
 
 3. Add the following code for the _Timer\_Tick_ event handler.
 
@@ -207,31 +207,31 @@ private async Task InitGpioAsync()
 
 Note that we added the <code>async</code> modifier to the method signature and changed the return type from <code>void</code> to <code>Task</code>. 
 
-If you want to compare your code with the master lab code, you can find it [here](https://github.com/ThingLabsIo/IoTLabs/blob/master/RPi2/HelloWindowsIoT/HelloWindowsIoT/MainPage.xaml.cs).
+If you want to compare your code with the master lab code, you can find it [here](https://github.com/ThingLabsIo/IoTLabs/blob/master/RPi3/HelloWindowsIoT/HelloWindowsIoT/MainPage.xaml.cs).
 
-# Run the App on the Raspberry Pi 2
-The application is ready to be deployed and run on the Raspberry Pi 2. You must set the target in Visual Studio to _ARM_ and point the debugger at a _Remote Machine_ (your Raspberry Pi 2).
+# Run the App on the Raspberry Pi 3
+The application is ready to be deployed and run on the Raspberry Pi 3. You must set the target in Visual Studio to _ARM_ and point the debugger at a _Remote Machine_ (your Raspberry Pi 3).
 
 1. Select __ARM__ from the _Solution Platforms_ list in the toolbar.
 2. Select __REMOTE MACHINE__ from the _Device_ dropdown list in the toolbar.
 
-![Targeting ARM on a remote machine](/images/rpi2/rpi2_lab01_arm.png)
+![Targeting ARM on a remote machine](/images/RPi3/RPi3_lab01_arm.png)
 
 You will be prompted with the _Remote Connections_ dialog. 
 
-3. Select your device from the list of _Auto Detected_ devices. (Note: The Raspberry Pi 2 you are working with is named <strong>ThingLabsXX</strong> where the XX is replaced with the number on your Raspberry Pi 2.) If your device is not listed, type your device's name into the _Manual Configuration_ textbox.
+3. Select your device from the list of _Auto Detected_ devices. (Note: The Raspberry Pi 3 you are working with is named <strong>ThingLabsXX</strong> where the XX is replaced with the number on your Raspberry Pi 3.) If your device is not listed, type your device's name into the _Manual Configuration_ textbox.
 4. Set the _Authentication Mode_ to __Universal (Unencrypted Protocol)__.
 5. Click _Select_.
 
-![Choose the remote machine to deploy to](/images/rpi2/rpi2_lab01_remote.png)
+![Choose the remote machine to deploy to](/images/RPi3/RPi3_lab01_remote.png)
 
 __NOTE:__ You can verify or modify these values by navigating to the project properties (select Properties in the Solution Explorer) and choosing the Debug tab on the left.
 
-6. Press __F5__ to run the application and you should see it deploy on the Raspberry Pi 2. You will see the red LED blink in unison with the red circle on the screen. If the red LED is not blinking, but the display on the screen is, recheck your wiring. 
+6. Press __F5__ to run the application and you should see it deploy on the Raspberry Pi 3. You will see the red LED blink in unison with the red circle on the screen. If the red LED is not blinking, but the display on the screen is, recheck your wiring. 
 
 # Conclusion &amp; Next Steps
 
-Congratulations! You have built a Universal Windows Platform application that controlled one of the GPIO pins and deployed the app to a Raspberry Pi 2. The core concepts you've learned are:
+Congratulations! You have built a Universal Windows Platform application that controlled one of the GPIO pins and deployed the app to a Raspberry Pi 3. The core concepts you've learned are:
 
 1. Building a Universal Windows Platform application that can run on any Windows 10 device. 
 2. Testing for the existence of the GPIO controller to inform the application of what capabilities are accessible.

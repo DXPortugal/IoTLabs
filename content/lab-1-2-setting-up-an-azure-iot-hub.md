@@ -41,7 +41,7 @@ You'll now create a new Azure IoT Device.
 
 1. Switch to the _Management_ tab.
 3. Click the _Create_ button.
-4. In the dialog that opens, enter a name for your IoT device. This can be the same name as your Raspberry Pi 2, or it can be different.
+4. In the dialog that opens, enter a name for your IoT device. This can be the same name as your Raspberry Pi 3, or it can be different.
 5. Click the _Create_ button, and click _Done_ on the confirmation dialog that opens.
 
 ![Create a new virtual device](/images/RPi3/RPi3_deviceexplorer02.png) 

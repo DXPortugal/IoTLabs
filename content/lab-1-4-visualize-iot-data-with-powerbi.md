@@ -125,7 +125,7 @@ Go back to the browser tab where you have Power BI open. Look in the _Datasets_ 
 
 Repeat steps 2-4 for __avgdark__ and __mindark__, changing their field type to __Average__ and __Minimum__ respectively.
 
-![Create the Power BI report](/images/rpi2/powerbi01.png)
+![Create the Power BI report](/images/RPi3/powerbi01.png)
 
 As you are setting the values you should see the line chart updating with the changes. Click _File_ > _Save_ and give the report the name __Darkness Report__. Hover over the upper-right corner of the chart and click on the pin icon. Create a new dashboard to pin the gauges to. Once you have pinned all three gauges, click on the dashboard in the left sidebar. On the dashboard you can watch the data update in near real-time. While you are watching the dashboard, pinch or blow on the sensors on the weather shield and you will see the data change in the gauges.
 

@@ -3,20 +3,20 @@
 In this lab you will build a Universal Windows Platform application that detects ambient light and sends the data that is being collected to Azure IoT Hub. You will build a data pipeline to process the incoming data stream and output it to a visualization tool.
  
 # Capturing Analog Data with a Voltage Divider
-For this lab you will work with a few new concepts, both in the circuits connected to the Raspberry Pi 2 and in the Cloud. The first thing you will do is wire up the Raspberry Pi 2 to be able to read voltage as determined by the resistance created by a photoresistor. Wire your board according to the diagram. (Wire colors don't matter, but  they help with identification of purpose.) This wiring uses an analog-to-digital-convertor (ADC) which enables you to capture analog input instead of simply digital input. You can use either an  MCP3208, MCP3008, or MCP3002 ADC. When you did the lab with the LED you dealt only with a digital signal - you sent voltage to the LED to turn it on or off (with no voltage). Many sensors, such as a _photoresistor_, are capable of analog input or output, giving them a broader range than simply a 1 or a 0. 
+For this lab you will work with a few new concepts, both in the circuits connected to the Raspberry Pi 3 and in the Cloud. The first thing you will do is wire up the Raspberry Pi 3 to be able to read voltage as determined by the resistance created by a photoresistor. Wire your board according to the diagram. (Wire colors don't matter, but  they help with identification of purpose.) This wiring uses an analog-to-digital-convertor (ADC) which enables you to capture analog input instead of simply digital input. You can use either an  MCP3208, MCP3008, or MCP3002 ADC. When you did the lab with the LED you dealt only with a digital signal - you sent voltage to the LED to turn it on or off (with no voltage). Many sensors, such as a _photoresistor_, are capable of analog input or output, giving them a broader range than simply a 1 or a 0. 
 
 A _photoresistor_, also known as _light-dependent resistor (LDR)_, or a photocell, works by limiting the amount of voltage that passes through it based on the intensity of light detected. The resistance decreases as light input increases - in other words, the more light, the more voltage passes through the photoresistor.
 
-In order to take advantage of the photoresistor you will create a _voltage divider_, which is a passive linear circuit that splits the input voltage amongst two or more components (similar to a Y-splitter). The following schematic shows a voltage divider in use on an Arduino Uno R3 (this is a simpler way to show the diagram as compared to the Raspberry Pi 2 which, as you will see, incorporates an external ADC).
+In order to take advantage of the photoresistor you will create a _voltage divider_, which is a passive linear circuit that splits the input voltage amongst two or more components (similar to a Y-splitter). The following schematic shows a voltage divider in use on an Arduino Uno R3 (this is a simpler way to show the diagram as compared to the Raspberry Pi 3 which, as you will see, incorporates an external ADC).
 
 ![A voltage divder schematic](/images/photoresistor_schem.png)
 
-To create the voltage divider needed for this the Raspberry Pi 2 has been connected as follows:
+To create the voltage divider needed for this the Raspberry Pi 3 has been connected as follows:
 
 - Voltage connected from the 5-volt (input voltage) pin to a circuit using a breadboard.
 - Input voltage connected to a 10k Ohm static resistor.
 - A voltage divider is established coming out of the static resistor:
-   - One route to the ADC which is connected to the Raspberry Pi 2.
+   - One route to the ADC which is connected to the Raspberry Pi 3.
    - One route to a variable resistor: the photoresistor.
 - The circuit is completed out of the variable resistor to ground.
 
@@ -28,18 +28,18 @@ Following is the wiring diagram for this circuit. Select the ADC you have and ta
 
 __MCP3002 - 10-bit, 2-channel ADC__
 
-![Wiring diagram using the MCP3002 ADC](/images/rpi2/rpi2_IoTLightSensor_mcp3002_bb.png)
+![Wiring diagram using the MCP3002 ADC](/images/RPi3/RPi3_IoTLightSensor_mcp3002_bb.png)
 
 __MCP3008 - 10-bit, 8-channel ADC__
 
-![Wiring diagram using the MCP3008 ADC](/images/rpi2/rpi2_IoTLightSensor_mcp3008_bb.png)
+![Wiring diagram using the MCP3008 ADC](/images/RPi3/RPi3_IoTLightSensor_mcp3008_bb.png)
 
 __NOTE:__ _The ADC has a notch out of one side - ensure that the side with the notch is (according to the diagram) on the lower edge of the breadboard._
 
 # Build the Universal Windows Platform Application
 In this application you will read the voltage value coming into the ADC from the voltage divider - the higher the voltage, the darker it is (remember, you are reading in the residual voltage, which is diverted to the ADC when there is resistance in the photoresistor). You will use the _darkness_ value to determine if the LED should be on or off.
 
-The ADC is connected to the Raspberry Pi 2 through the Serial Peripheral Interface (SPI) bus. SPI is a synchronous serial communication interface used for short distance communication, primarily in embedded systems. SPI devices communicate in full duplex mode using a master-slave architecture with a single master. The master device originates the frame for reading and writing. Multiple slave devices are supported through selection with individual slave select (SS) lines. SPI is a four-wire serial bus as follows:
+The ADC is connected to the Raspberry Pi 3 through the Serial Peripheral Interface (SPI) bus. SPI is a synchronous serial communication interface used for short distance communication, primarily in embedded systems. SPI devices communicate in full duplex mode using a master-slave architecture with a single master. The master device originates the frame for reading and writing. Multiple slave devices are supported through selection with individual slave select (SS) lines. SPI is a four-wire serial bus as follows:
 
  - SCLK - Serial Clock (output from master).
  - MOSI - Master Output, Slave Input (output from master).
@@ -53,7 +53,7 @@ We won't go any deeper into SPI or the pin layout of the two ADCs; suffice to sa
 1. Launch Visual Studio and start a new __Blank App (Universal Windows)__ (found in the _C# -> Windows -> Universal_ node).
 2. Name the application _IoTNightlight_.
 
-![IoTNightlight Project](/images/rpi2/proj-iotnightlight.png)
+![IoTNightlight Project](/images/RPi3/proj-iotnightlight.png)
 
 ## Add the Windows IoT Extensions for the UWP
 Once the solution is created:
@@ -62,7 +62,7 @@ Once the solution is created:
  2. In the Reference Manager dialog, expand the _Universal Windows_ node and select _Extensions_.
  3. In the list of extensions, check the box next to _Windows IoT Extensions for the UWP_ and click __OK__ . Make sure to select the same version number as the OS running on the Raspberry Pi. It is easy to accidently select the _Windows Mobile Extensions for the UWP_, (which is just below the IoT extensions) so take extra care to make sure you have added the correct reference.
  
- ![Add Extentions for the UWP](/images/rpi2/proj-iotnightlight-uwp.png)
+ ![Add Extentions for the UWP](/images/RPi3/proj-iotnightlight-uwp.png)
 
 ## Add the Microsoft.Azure.Devices.Client NuGet Package
 Once the _Windows IoT Extensions for the UWP_ are added...
@@ -71,7 +71,7 @@ Once the _Windows IoT Extensions for the UWP_ are added...
 2. Use the search field to search for __Microsoft.Azure.Devices.Client__.
 3. Click on the __Install__ button to install the package.
 
-![IoTNightlight Project](/images/rpi2/azure-devices-client.png)
+![IoTNightlight Project](/images/RPi3/azure-devices-client.png)
 
 ## Design the App UI
 Open the _MainPage.xaml_ file. This is the layout definition for the initial page that loads when the app is run. 
@@ -126,7 +126,7 @@ public sealed partial class MainPage : Page
     // Provide a short description of the location of the device, such as 'Home Office' or 'Garage'
     private const string IOT_HUB_DEVICE_LOCATION = "YOUR DEVICE LOCATION GOES HERE";
     
-    // Line 0 maps to physical pin 24 on the RPi2
+    // Line 0 maps to physical pin 24 on the RPi3
     private const Int32 SPI_CHIP_SELECT_LINE = 0; 
     private const string SPI_CONTROLLER_NAME = "SPI0";
 
@@ -173,7 +173,7 @@ public MainPage()
 }
 {% endhighlight %}
 
-This event handler will be invoked whenever the _MainPage_ is unloaded. You will use it to clean up a few resources. Use the Visual Studio light bulb feature to _Generate method 'MainPage_Unloaded'_ and add the following code to the method. MainPageUnloaded will dispose of connections to the pins of the Raspberry Pi 2 when invoked.
+This event handler will be invoked whenever the _MainPage_ is unloaded. You will use it to clean up a few resources. Use the Visual Studio light bulb feature to _Generate method 'MainPage_Unloaded'_ and add the following code to the method. MainPageUnloaded will dispose of connections to the pins of the Raspberry Pi 3 when invoked.
 
 {% highlight csharp %}
 private void MainPage_Unloaded(object sender, RoutedEventArgs e)
@@ -435,24 +435,24 @@ private void LightLed()
 In this method you simply check to see if the ADC value is greater than two-thirds of the ADC's resolution. In other words, you're asking if it's kind of dark. If it is, turn on the LED and paint the indicator bar in the UI red. If it isn't, turn off the LED and paint the indicator bar light gray.
 
 ## Test Run the App
-At this point you can deploy and run the application to see if the photoresistor and LED are working. You still haven't sent a message to Azure, but testing the circuit is never a bad idea. To deploy this application to your Raspberry Pi 2, select __ARM__ from the _Solution Platforms_ list in the toolbar, and select __REMOTE MACHINE__ from the _Device_ dropdown list in the toolbar.
+At this point you can deploy and run the application to see if the photoresistor and LED are working. You still haven't sent a message to Azure, but testing the circuit is never a bad idea. To deploy this application to your Raspberry Pi 3, select __ARM__ from the _Solution Platforms_ list in the toolbar, and select __REMOTE MACHINE__ from the _Device_ dropdown list in the toolbar.
 
-![Targeting ARM on a remote machine](/images/rpi2/rpi2_lab01_arm.png)
+![Targeting ARM on a remote machine](/images/RPi3/RPi3_lab01_arm.png)
 
 You will be prompted with the _Remote Connections_ dialog. Select your device from the list of _Auto Detected_ devices, or type in the device name or IP address into the _Manual Configuration_ textbox. Set the _Authentication Mode_ to __Universal (Unencrypted Protocol)__, and click _Select_.
 
-![Choose the remote machine to deploy to](/images/rpi2/rpi2_lab01_remote.png)
+![Choose the remote machine to deploy to](/images/RPi3/RPi3_lab01_remote.png)
 
 __NOTE:__ You can verify or modify these values by navigating to the project properties (select Properties in the Solution Explorer) and choosing the Debug tab on the left.
 
-Now press __F5__ to run the application and you should see it deploy on the Raspberry Pi 2. Test the circuit and application by changing the amount of light the photoresistor is exposed to.
+Now press __F5__ to run the application and you should see it deploy on the Raspberry Pi 3. Test the circuit and application by changing the amount of light the photoresistor is exposed to.
 
 ## Send A Message to Azure IoT Hub
 Now that you know your physical device is working, it is time to send its data to Azure. 
 
 In the previous lab you created a device in Azure IoT Hub. The last step of that lab was to copy the device-specific connection string for that device. If the connection string is still in your copy buffer, simply paste it into the IOT_HUB_CONN_STRING field in Step 1 below. If the connection string is no longer in your copy buffer, you can get the device-specific connection string again by selecting it in the DeviceExplorer _Devices_ list by right-clicking and selecting _Copy connection string for selected device_.
 
-![Get the device-specific connection string](/images/rpi2/rpi2_deviceexplorer03.png) 
+![Get the device-specific connection string](/images/RPi3/RPi3_deviceexplorer03.png) 
 
 Just before the _MainPage()_ constructor definition, update the following code.
 
@@ -532,10 +532,10 @@ private async Task SendMessageToIoTHubAsync(int darkness)
 
 With this method you attempt to construct a JSON message payload, display it on the screen, and send it to your Azure IoT Hub. The communication with the Azure IoT Hub is managed by the <code>deviceClient</code> object from the _Microsoft.Azure.Devices.Client_ namespace.
 
-The final _MainPage.xaml.cs_ can be found [here](https://github.com/ThingLabsIo/IoTLabs/blob/master/RPi2/IoTLightSensor/IoTLightSensor/MainPage.xaml.cs){:target="_blank"} and the complete solution can be found [here](https://github.com/ThingLabsIo/IoTLabs/tree/master/RPi2/IoTLightSensor){:target="_blank"}.
+The final _MainPage.xaml.cs_ can be found [here](https://github.com/ThingLabsIo/IoTLabs/blob/master/RPi3/IoTLightSensor/IoTLightSensor/MainPage.xaml.cs){:target="_blank"} and the complete solution can be found [here](https://github.com/ThingLabsIo/IoTLabs/tree/master/RPi3/IoTLightSensor){:target="_blank"}.
 
 ## Run the Application
-Now you can run the application on your Raspberry Pi 2 and not only will you see the indicator bar changing, but you will also see the log of messages being sent to Azure IoT Hub at a rate of one per second.
+Now you can run the application on your Raspberry Pi 3 and not only will you see the indicator bar changing, but you will also see the log of messages being sent to Azure IoT Hub at a rate of one per second.
 
 # Conclusion &amp; Next Steps
 Congratulations! You have built a Universal Windows Platform application that captures data from the physical word and sends it to Azure IoT Hub. The core concepts you've learned are:

@@ -10,7 +10,7 @@ The Raspberry Pi 3 is a low cost credit-card sized computer that plugs into a co
 [In this lab](/content/lab-1-setting-up-your-rpi.md) you will install Windows 10 IoT Core on your Raspberry Pi 3. Estimated time to complete: **30-minutes**.
 
 ###Lab 1.1: Hello, Windows IoT!
-[In this lab](/content/lab-1-1-hello-windows-iot.md) you will create a simple Thing using a Raspberry Pi 2 running Windows 10 IoT Core.
+[In this lab](/content/lab-1-1-hello-windows-iot.md) you will create a simple Thing using a Raspberry Pi 3 running Windows 10 IoT Core.
 Estimated time to complete: **30-minutes**. 
 
 ###Lab 1.2: Setting Up an Azure IoT Hub

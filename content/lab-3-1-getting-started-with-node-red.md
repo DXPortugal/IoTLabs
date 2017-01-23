@@ -71,18 +71,27 @@ You can then access the Node-RED editor at [http://localhost:1880](http://localh
 
 ## Install Node-Red node for Azure IoT Hub
 
-Download repo 
-npm install -g
 
+1. Clone or download the [Node.js SDK for Microsoft Azure IoT](https://github.com/Azure/azure-iot-sdk-node). 
+   You can download the zip or clone the repo by executing <code>git clone https://github.com/Azure/azure-iot-sdk-node.git</code>
 
+![Node.js SDK for Microsoft Azure IoT Clone/Download](lab3_nodejs-iot-sdk-download-clone.png)
 
+2. Navigate to repo root folder and then the node-red node folder: **device\node-red**. Check there is an existant package.json file. This json file corresponds to the node package description.
+
+3. To install the node, run the following command: 
+
+  ```bash
+  npm install -g
+  ```
+
+4. To validate this installation, access the Node-Red editor, one more time at [http://localhost:1880](http://localhost:1880). You may have to restart node-red (Press Ctrl-C to stop the server).
 
 
 ### Summary
-You've installed Node-RED. 
+You've now installed Node-RED and made the Node-Red node for Azure IoT Hub, available to be used in your flows. From now on, everytime you start Node-RED, this node will be available to connect your flow to Microsoft IoT Hub, so you can ingest data.  
 
-
-In the **[next lab][nextlab]** you will start using Node-RED, connecting it to the Azure IoT Hub.
+In the **[next lab][nextlab]** you will start using Node-RED, learning the basics of using the editor. You will create your first flow.
 
 ---
 
@@ -90,4 +99,4 @@ Back to [Lab 3 - IoT with Linux and Node.js](/content/lab-3-linux-iot-node-red.m
 
 Back to [IoT Labs homepage](/readme.md)
 
-[nextlab]: /content/lab-2-3-send-device-to-cloud-messages.md
+[nextlab]: /content/lab-3-2-creating-your-first-flow.md

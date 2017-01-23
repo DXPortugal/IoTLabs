@@ -1,12 +1,12 @@
 #Lab - Getting Started
 
 ## Preparing for the Windows 10 IoT - Connected Nightlight Workshop
-The labs in the Connected Nightlight Workshop build on each other to enable you to prototype your own Internet of Things (IoT) devices. You will use the Microsoft .NET Framework to build an application for the Universal Windows Platform (UWP) that can run on any Windows 10 device, including a Raspberry Pi 2, MinnowBoard MAX, or a DragonBoard 410c running Windows 10 IoT Core.
+The labs in the Connected Nightlight Workshop build on each other to enable you to prototype your own Internet of Things (IoT) devices. You will use the Microsoft .NET Framework to build an application for the Universal Windows Platform (UWP) that can run on any Windows 10 device, including a Raspberry Pi 3, MinnowBoard MAX, or a DragonBoard 410c running Windows 10 IoT Core.
 
 ## Bill of Materials
 In the Connected Nightlight Workshop you will need the following:
 
-1. [Raspberry Pi 2](http://www.amazon.com/Raspberry-Pi-Model-Project-Board/dp/B00T2U7R7I/){:target="_blank"} with a [5V 2A Switching Power Supply w/ 20AWG 6' MicroUSB Cable](https://www.adafruit.com/product/1995)
+1. [Raspberry Pi 3](https://www.adafruit.com/products/3055){:target="_blank"} with a [5V 2A Switching Power Supply w/ 20AWG 6' MicroUSB Cable](https://www.adafruit.com/product/1995)
 2. [Solderless Breadboard](https://www.adafruit.com/products/64){:target="_blank"}
 3. [Jumper wires (Male to Male)](https://www.adafruit.com/product/1957){:target="_blank"}
 4. [Jumper wires (Male to Female)](https://www.adafruit.com/product/1954){:target="_blank"}
@@ -22,12 +22,12 @@ In the Connected Nightlight Workshop you will need the following:
 	* [Samsung 32GB EVO Class 10 Micro SDHC up to 48MB/s with Adapter (MB-MP32DA/AM)](http://www.amazon.com/gp/product/B00IVPU786){:target="_blank"}
 	* [SanDisk Ultra Micro SDHC, 16GB Card](http://www.amazon.com/SanDisk-Ultra-Micro-SDHC-16GB/dp/9966573445).{:target="_blank"}
 
-**Note:** All of these items, with the exception of the Raspberry Pi 2, are included in the [Microsoft IoT Pack for Raspberry Pi 2](http://www.adafruit.com/windows10iotpi2){:target="_blank"} from AdaFruit.
+**Note:** All of these items, with the exception of the Raspberry Pi 3, are included in the [Microsoft IoT Pack for Raspberry Pi 3](http://www.adafruit.com/windows10iotpi2){:target="_blank"} from AdaFruit.
 
 ## Install Visual Studio 2015
 If you don't already have it installed, install [Visual Studio 2015](https://www.visualstudio.com/){:target="_blank"}. You can use the free [Community Edition](https://www.visualstudio.com/post-download-vs/?sku=community&clcid=0x409&telem=ga), or any other higher edition. When you are installing Visual Studio, you must do a __Custom__ install and select to install the __Universal Windows App Development Tools -> Tools and Windows SDK__. 
 
-![Install UWP](/images/rpi2/rpi2_install_uwp.png)
+![Install UWP](/images/RPi3/RPi3_install_uwp.png)
 
 After the installation is complete, install the Windows IoT Core Project Templates from [here](https://visualstudiogallery.msdn.microsoft.com/55b357e1-a533-43ad-82a5-a88ac4b01dec){:target="_blank"}.
 

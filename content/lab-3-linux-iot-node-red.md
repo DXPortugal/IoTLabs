@@ -1,4 +1,4 @@
-#Lab 3 - IoT with Linux and Node.js
+#Lab 3 - Using Node-RED with Microsoft Azure IoT
 
 In this lab, you begin by learning what is Node-RED, and the basics of using it with a Raspberry Pi 3 that's running Raspbian. One of the major goals is to connect your device to the cloud by using a Node-RED node that allows you to connect with Azure IoT Hub.
 
