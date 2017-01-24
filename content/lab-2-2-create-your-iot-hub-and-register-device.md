@@ -40,13 +40,13 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
    ```bash
    az provider register -n "Microsoft.Devices"
    ```
-4. Create a resource group named iot-sample in the West US region by running the following command:
+4. Create a resource group named iot-sample in the North Europe region by running the following command:
 
    ```bash
-   az group create --name iot-sample --location westus
+   az group create --name iot-sample --location northeurope
    ```
 
-   `westus` is the location you create your resource group. If you want to use another location, you can run `az account list-locations -o table` to see all the locations Azure supports.
+   `northeurope` is the location you create your resource group. If you want to use another location, you can run `az account list-locations -o table` to see all the locations Azure supports.
  
 5. Create an IoT hub in the iot-sample resource group by running the following command:
 
@@ -56,8 +56,7 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
 
    By default, the tool creates an IoT Hub in the Free pricing tier. For more infomation, see [Azure IoT Hub pricing](https://azure.microsoft.com/pricing/details/iot-hub/).
 
-> [!NOTE] 
-> The name of your IoT hub must be globally unique. You can create only one F1 edition of Azure IoT Hub under your Azure subscription.
+> **NOTE:** The name of your IoT hub must be globally unique. You can create only one F1 edition of Azure IoT Hub under your Azure subscription.
 
 ### Register Pi in your IoT hub
 Each device that sends messages to your IoT hub and receives messages from your IoT hub must be registered with a unique ID. You will use Azure CLI to register your Pi and create a self-signed X.509 certificate for device authentication.
