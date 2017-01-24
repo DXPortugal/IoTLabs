@@ -31,7 +31,7 @@ Estimated time to complete: **25-minutes**.
 
 Estimated time to complete: **20-minutes**.
 
-###Lab 2.5: Send cloud-to-device messages
+###Lab 2.5: Change the on and off behavior of the LED
 [In this lab](/content/lab-2-5-change-the-on-and-off-behavior-of-the-led.md) you will customize the messages to change the LED’s on and off behavior.
 
 Estimated time to complete: **10-minutes**.
