@@ -91,6 +91,7 @@ To complete this task, use the [breadboard](https://learn.sparkfun.com/tutorials
 Now, lets get the tools!
 
 ### [Install Git and Node.js](#install-git-note)
+
 Click the following links to download and install Git and Node.js LTS for Windows.
 
 * [Get Git for Windows](https://git-scm.com/download/win/)

@@ -25,7 +25,7 @@ devdisco list --eth
 
 You should see an output that is similar to the following:
 
-!["Lab2 Device Discovery"](lab2-device-discovery)
+!["Lab2 Device Discovery"](/images/lab2_device_discovery.png)
 
 Take note of the IP address and hostname of Pi. You need this information later in this article.
 
@@ -48,7 +48,7 @@ To open the sample code, follow these steps:
   code .
   ```
 
-[Lab2 VsCode Blink](lab2-vscode-blink-mac)
+[Lab2 VsCode Blink](/images/lab2_vscode-blink-mac.png)
 
 
 The app.js file in the app subfolder is the key source file that contains the code to control the LED.
@@ -83,15 +83,15 @@ To configure the device connection, follow these steps:
 
 3. Replace the placeholder [device hostname or IP address] with the IP address or the host name that you got previously in "Obtain the IP address and host name of Pi."
 
-[Lab2 VSCode Config](lab2-vscode-config-mac)
+![Lab2 VSCode Config](/images/lab2-vscode-config-mac.png)
 
-> You can use SSH key instead of user name and password when connecting to Raspberry Pi. In order to do this you will have to generate the key using ssh-keygen and ssh-copy-id pi@<device address>.
+> You can use SSH key instead of user name and password when connecting to Raspberry Pi. In order to do this you will have to generate the key using **ssh-keygen** and **ssh-copy-id pi@\<device address\>**.
 > 
-> On Windows these commands are available in Git Bash.
+> On Windows these commands are available in **Git Bash**.
 >
-> On MacOS you need to run brew install ssh-copy-id.
+> On MacOS you need to run **brew install ssh-copy-id**.
 >
-> After successfully uploading the key to the Raspberry Pi, replace device_password with device_key_path property in config-raspberrypi.json.
+> After successfully uploading the key to the Raspberry Pi, replace **device_password** with **device_key_path** property in **config-raspberrypi.json**.
 >
 > Updated lines should look as below:
 > ```
@@ -122,7 +122,7 @@ gulp deploy && gulp run
 #### Verify the app works
 You should now see the LED on Pi blinking every two seconds. 
 
-![Lab2 LED Blinking][lab2-led-blinking]
+![Lab2 LED Blinking][/images/lab2_led-blinking.jpg]
 
 ### Summary
 You've installed the required tools to work with Pi and deployed a sample application to Pi to blink the LED. You can now create, deploy, and run another sample application that connects Pi to Azure IoT Hub to send and receive messages.
@@ -143,8 +143,8 @@ Back to [IoT Labs homepage](/readme.md#labs)
 
 [nextlab]: /content/lab-2-2-create-your-iot-hub-and-register-device.md
 
-[lab2-led-blinking]: ./images/lab2_led_blinking.jpg "Lab 2 Led Blinking"
-[lab2-device-discovery]: ./images/lab2_device_discovery.png "Lab 2 Device Discovery"
-[lab2-vscode-blink-mac]: ./images/lab2_vscode-blink-mac.png "Lab 2 VSCODE Blink"
-[lab2-vscode-config-mac]: ./images/lab2_vscode-config-mac.png "Lab 2 VSCODE Config"
+[lab2-led-blinking]: /images/lab2_led-blinking.jpg "Lab 2 Led Blinking"
+[lab2-device-discovery]: /images/lab2_device-discovery.png "Lab 2 Device Discovery"
+[lab2-vscode-blink-mac]: /images/lab2_vscode-blink-mac.png "Lab 2 VSCODE Blink"
+[lab2-vscode-config-mac]: /images/lab2_vscode-config-mac.png "Lab 2 VSCODE Config"
 
