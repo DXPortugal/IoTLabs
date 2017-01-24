@@ -443,7 +443,7 @@ You will be prompted with the *Remote Connections* dialog. Select your device fr
 
 ![Choose the remote machine to deploy to](/images/lab1_rpi3-lab01-remote.png)
 
-**NOTE:** You can verify or modify these values by navigating to the project properties (select Properties in the Solution Explorer) and choosing the Debug tab on the left.
+> You can verify or modify these values by navigating to the project properties (select Properties in the Solution Explorer) and choosing the Debug tab on the left.
 
 Now press **F5** to run the application and you should see it deploy on the Raspberry Pi 3. Test the circuit and application by changing the amount of light the photoresistor is exposed to.
 
