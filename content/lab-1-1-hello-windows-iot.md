@@ -234,7 +234,7 @@ Congratulations! You have built a Universal Windows Platform application that co
 2. Testing for the existence of the GPIO controller to inform the application of what capabilities are accessible.
 3. Controlling the state of a device via the GPIO pins. 
 
-In the [next lab][nextlab] you will set up a Microsoft Azure IoT Hub that will act as the cloud backend for your IoT devices.
+In the **[next lab][nextlab]** you will set up a Microsoft Azure IoT Hub that will act as the cloud backend for your IoT devices.
 
 ---
 

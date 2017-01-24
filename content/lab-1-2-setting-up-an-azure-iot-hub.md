@@ -73,7 +73,7 @@ If you're not using Windows, or if you prefer to use a command line interface, y
 ## Conclusion &amp; Next Steps
 Congratulations! You have created an Azure IoT Hub that you will connect devices to. You also created a representation of a physical device in your IoT Hub. In the next lab you will build a Universal Windows Application that will collect data from the RPi3 and send it to Azure IoT Hub.
 
-In the [next lab][nextlab] you will send telemetry to the cloud through Azure IoT Hub.
+In the **[next lab][nextlab]** you will send telemetry to the cloud through Azure IoT Hub.
 
 ---
 
