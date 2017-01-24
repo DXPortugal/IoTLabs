@@ -48,7 +48,7 @@ To open the sample code, follow these steps:
   code .
   ```
 
-[Lab2 VsCode Blink](/images/lab2_vscode-blink-mac.png)
+![Lab2 VsCode Blink](/images/lab2_vscode-blink-mac.png)
 
 
 The app.js file in the app subfolder is the key source file that contains the code to control the LED.
@@ -83,7 +83,7 @@ To configure the device connection, follow these steps:
 
 3. Replace the placeholder [device hostname or IP address] with the IP address or the host name that you got previously in "Obtain the IP address and host name of Pi."
 
-![Lab2 VSCode Config](/images/lab2-vscode-config-mac.png)
+![Lab2 VSCode Config](/images/lab2_vscode-config-mac.png)
 
 > You can use SSH key instead of user name and password when connecting to Raspberry Pi. In order to do this you will have to generate the key using **ssh-keygen** and **ssh-copy-id pi@\<device address\>**.
 > 
@@ -122,7 +122,7 @@ gulp deploy && gulp run
 #### Verify the app works
 You should now see the LED on Pi blinking every two seconds. 
 
-![Lab2 LED Blinking][/images/lab2_led-blinking.jpg]
+![Lab2 LED Blinking](/images/lab2_led-blinking.jpg)
 
 ### Summary
 You've installed the required tools to work with Pi and deployed a sample application to Pi to blink the LED. You can now create, deploy, and run another sample application that connects Pi to Azure IoT Hub to send and receive messages.
