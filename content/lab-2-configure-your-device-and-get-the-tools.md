@@ -127,12 +127,12 @@ Back to [IoT Labs homepage](/readme.md#labs)
 
 ![9gag Potato](/images/potato06.jpg)
 
-[lab2-material]: ./images/lab2_material.jpg "Lab 2 Material"
+[lab2-material]: ./images/lab2_starter-kit.jpg "Lab 2 Material"
 [lab2-sdcard]: ./images/lab2_sdcard.jpg "Lab 2 Insert SD Card"
-[lab2-power]: ./images/lab2_power.jpg "Lab 2 Turn on you Rpi3"
-[lab2-connect-ethernet]: ./images/lab2_connect_ethernet.jpg "Lab 2 Connect ethernet"
-[lab2-breadboard]: ./images/lab2_breadboard_led_resistor.jpg "Lab 2 Breadboard"
-[lab2-pinout-breadboard]: ./images/lab2_pinout_breadboard.png "Lab 2 Pinout"
-[lab2-hardware-ready]: ./images/lab2_hardware_ready.jpg "Lab 2 Hardware Ready"
+[lab2-power]: ./images/lab2-power.jpg "Lab 2 Turn on you Rpi3"
+[lab2-connect-ethernet]: ./images/lab2_connect-ethernet.jpg "Lab 2 Connect ethernet"
+[lab2-breadboard]: ./images/lab2_breadboard-led-resistor.jpg "Lab 2 Breadboard"
+[lab2-pinout-breadboard]: ./images/lab2_pinout-breadboard.png "Lab 2 Pinout"
+[lab2-hardware-ready]: ./images/lab2_hardware-ready.jpg "Lab 2 Hardware Ready"
 
 

@@ -132,7 +132,7 @@ As you are setting the values you should see the line chart updating with the ch
 # Conclusion
 In this lab you learned how to create an Azure Stream Analytics job to query data coming in to Azure IoT Hub, process it and send it to Power BI. In Power BI you learned how to create reports and pin the data visualizations to a dashboard for near real-time updates.
 
-Congratulations! In this Lab you experienced an IoT solution end-to-end. You built a *Thing* that both sent output (blinked an LED) and collected input (ambient light) and used it to send data to Azure IoT Hubs. You then passed that data stream into Azure Stream Analytics, queried it, and sent the output to Power BI where you created a visualization of the IoT data.
+**Congratulations!** In this Lab you experienced an IoT solution end-to-end. You built a *Thing* that both sent output (blinked an LED) and collected input (ambient light) and used it to send data to Azure IoT Hubs. You then passed that data stream into Azure Stream Analytics, queried it, and sent the output to Power BI where you created a visualization of the IoT data.
 
 ---
 
