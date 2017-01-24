@@ -18,8 +18,8 @@ Once the Windows IoT Core Dashboard is installed, use it to flash the microSD ca
 
 ![Set up a new device](/images/labs-windows10-iot-core-dashboard.png)
 
-3. Use the dropdown list to make *Device Type* = **Raspberry Pi 3**.
-4. Select **Windows 10 IoT Core for Raspberry Pi 3**.
+3. Use the dropdown list to make *Device Type* = **Raspberry Pi 2 & 3**.
+4. Select **Windows 10 IoT Core**.
 4. Select the microSD card in the *Drive* dropdown list.
 5. Check the box for *I accept the software license terms* (of course you have already read them).
 6. Click the **Download and install** button.
@@ -58,6 +58,12 @@ Your Raspberry Pi 3 will reboot and when it is back up and running it will have 
 
 ### Conclusion &amp; Next Steps
 In this section you prepared your Raspberry Pi 3 for the subsequent labs. Next you will do the IoT equivalent of a 'Hello, World!' program: you will make an LED blink.
+
+We leave you additional documentation, that may become handly:
+
+ * [Raspberry Pi 2 & 3 Pin Mappings](/content/raspberry-pinout.md)
+ * [How to Install USB peripheral drivers](/content/raspberry-usb-perpherals.md)
+
 
 ---
 
