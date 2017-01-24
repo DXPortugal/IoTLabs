@@ -83,7 +83,7 @@ To complete this task, use the [breadboard](https://learn.sparkfun.com/tutorials
 * Connect the longer leg of the LED to one leg of the resistor.
 * Connect the other leg of the resistor to GPIO 4 (Pin 7).
 
-> that the LED polarity is important. This polarity setting is commonly known as Active Low.
+> Note that the LED polarity is important. This polarity setting is commonly known as Active Low.
 
 ![Lab2 Material][lab2-pinout-breadboard]
 
@@ -101,9 +101,9 @@ Use [gulp.js](http://gulpjs.com/) to automate the deployment of the sample appli
 
 Start a command prompt as an administrator. Install **gulp** and **device-discovery-cli** by running the following command:
 
-´´´
+```bash
 npm install -g device-discovery-cli gulp
-´´´
+```
 
 ### Install Visual Studio Code
 [Download](https://code.visualstudio.com/docs/setup/windows) and install Visual Studio Code. Visual Studio Code is a lightweight but powerful source code editor for Windows, Linux, and macOS. You use this editor later in the tutorial to edit the sample code.
@@ -129,7 +129,7 @@ Back to [IoT Labs homepage](/readme.md#labs)
 
 [lab2-material]: /images/lab2_starter-kit.jpg "Lab 2 Material"
 [lab2-sdcard]: /images/lab2_sdcard.jpg "Lab 2 Insert SD Card"
-[lab2-power]: /images/lab2-power.jpg "Lab 2 Turn on you Rpi3"
+[lab2-power]: /images/lab2_micro-usb-power-on.jpg "Lab 2 Turn on you Rpi3"
 [lab2-connect-ethernet]: /images/lab2_connect-ethernet.jpg "Lab 2 Connect ethernet"
 [lab2-breadboard]: /images/lab2_breadboard-led-resistor.jpg "Lab 2 Breadboard"
 [lab2-pinout-breadboard]: /images/lab2_pinout-breadboard.png "Lab 2 Pinout"
