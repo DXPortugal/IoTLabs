@@ -1,4 +1,5 @@
 #Lab 2 - IoT with Linux and Node.js
+![Raspbian](/images/raspbian.png "Raspbian")
 
 In this lab, you begin by learning the basics of working with Raspberry Pi 3 that's running Raspbian. You then learn how to seamlessly connect your devices to the cloud by using Azure IoT Hub.
 

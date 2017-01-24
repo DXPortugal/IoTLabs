@@ -68,4 +68,4 @@ Back to [Lab 3 - IoT with Linux and Node.js](/content/lab-3-linux-iot-node-red.m
 
 Back to [IoT Labs homepage](/readme.md)
 
-[nextlab]: /content/lab-2-3-send-device-to-cloud-messages.md
+[nextlab]: /content/lab-3-3-creating-creating-a-more-advanced-node-red-flow.md

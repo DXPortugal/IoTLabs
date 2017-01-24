@@ -1,4 +1,5 @@
 #Lab 1 - Windows 10 IoT - Connected Nightlight
+![Windows 10 IoT](/images/windows10-iot.png "Windows 10 IoT")
 
 This Internet of Things (IoT) Lab begins by showing you how to use Windows 10 IoT Core to connect sensors and devices. You will then be shown how to connect a device to the Cloud. Next you will be shown how to leverage Microsoft Azure services to collect data and control devices.  
 
