@@ -100,7 +100,7 @@ If you got lost, no problem. Every flow in Node-RED is no more than a JSON. So y
   ```
 
 ### Summary
-You've created a flow where you explored several ways to send data to Azure IoT Hub. Using the Azure IoT node. You've tried sending basica data payloads - from strings to JSON payloads with multiple data insides. In real IoT projects a different set of data is usual sent to the cloud, identifying device, timestamps and data collected from device sensors or appliances (ex: telemetry)
+You've created a flow where you explored several ways to send data to Azure IoT Hub, using the **Azure IoT node**. You've tried sending basic data payloads - from strings to JSON payloads with multiple data inside. In real IoT projects a different set of data is usual sent to the cloud, identifying device, timestamps and data collected from device sensors or appliances (ex: telemetry)
 You have also learned how to use functions and add some logic to your flow.
 
 ---
