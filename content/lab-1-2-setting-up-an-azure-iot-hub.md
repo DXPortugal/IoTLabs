@@ -3,7 +3,7 @@
 In this lab you will provision a new Azure IoT Hub. Once you have the IoT Hub created, you will be able to create a new Azure IoT device that you will use to send telemetry to Azure. Azure IoT devices are software references to physical devices.
 
 # Setup an Azure IoT Hub
-In a browser, navigate to the Azure Portal at [https://portal.azure.com](https://portal.azure.com){:target="_blank"}. Login to your Azure account (if you don't have one, register for a [free trial](https://azure.microsoft.com/en-us/pricing/free-trial/){:target="_blank"}). Once logged in:
+In a browser, navigate to the Azure Portal at [https://portal.azure.com](https://portal.azure.com). Login to your Azure account (if you don't have one, register for a [free trial](https://azure.microsoft.com/en-us/pricing/free-trial/)). Once logged in:
 
 1. Click on the __New__ menu option in the upper-left.
 2. Select __Internet of Things__.
@@ -28,7 +28,7 @@ Azure IoT Hub only allows connections from known devices that present proper cre
 ## Option 1: Use Azure IoT Hub DeviceExplorer (Windows Only)
 The simplest way to provision a new device is with the _DeviceExplorer_ utility. _DeviceExplorer_ is only available in Windows. 
 
-1. Download and run [Device Explorer][deviceexplorer]{:target="_blank"}. 
+1. Download and run [Device Explorer][deviceexplorer]. 
 2. After running the installer, the _DeviceExplorer.exe_ can be found at __C:\Program Files (x86)\Microsoft\DeviceExplorer__. 
 3. Run _DevicExplorer.exe_.
 4. Open the _Configuration_ tab.
@@ -54,7 +54,7 @@ You will see your device in the _Devices_ list. Once a device is created, you ca
 ![Get the device-specific connection string](/images/RPi3/RPi3_deviceexplorer03.png) 
 
 ## Option 2: Use the IoT Hub Explorer Command Line Interface (Cross Platform)
-If you're not using Windows, or if you prefer to use a command line interface, you can install the _iothub-explorer_ command line interface. The iothub-explorer tool enables you to provision devices in your IoT hub. It runs on any computer where Node.js is available. You can install Node.js from [NodeJS.org](https://nodejs.org){:target="_blank"}.
+If you're not using Windows, or if you prefer to use a command line interface, you can install the _iothub-explorer_ command line interface. The iothub-explorer tool enables you to provision devices in your IoT hub. It runs on any computer where Node.js is available. You can install Node.js from [NodeJS.org](https://nodejs.org).
 
 1. Open a command prompt and type the following:
 

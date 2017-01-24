@@ -7,7 +7,7 @@ In this lab you will install Windows 10 IoT Core on your Raspberry Pi 3.
 # Install Windows 10 IoT Core on Raspberry Pi 3
 Windows 10 IoT Core is a version of Windows 10 designed to run on small devices, like the Raspberry Pi 3. You can download and install the Windows IoT Core image onto the micro SD card. 
 
-1. In a browser, navigate to the [Microsoft Windows IoT Downloads &amp; Tools page](http://ms-iot.github.io/content/en-US/Downloads.htm){:target="_blank"}. 
+1. In a browser, navigate to the [Microsoft Windows IoT Downloads &amp; Tools page](http://ms-iot.github.io/content/en-US/Downloads.htm). 
 2. Click on the __Get IoT Core Dashboard__ button to download the dashboard utility.
 3. Once the __setup.exe__ has downloaded, open it to install the dashboard utility.
 

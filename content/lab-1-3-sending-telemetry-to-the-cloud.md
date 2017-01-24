@@ -532,7 +532,7 @@ private async Task SendMessageToIoTHubAsync(int darkness)
 
 With this method you attempt to construct a JSON message payload, display it on the screen, and send it to your Azure IoT Hub. The communication with the Azure IoT Hub is managed by the <code>deviceClient</code> object from the _Microsoft.Azure.Devices.Client_ namespace.
 
-The final _MainPage.xaml.cs_ can be found [here](https://github.com/ThingLabsIo/IoTLabs/blob/master/RPi3/IoTLightSensor/IoTLightSensor/MainPage.xaml.cs){:target="_blank"} and the complete solution can be found [here](https://github.com/ThingLabsIo/IoTLabs/tree/master/RPi3/IoTLightSensor){:target="_blank"}.
+The final _MainPage.xaml.cs_ can be found [here](https://github.com/ThingLabsIo/IoTLabs/blob/master/RPi3/IoTLightSensor/IoTLightSensor/MainPage.xaml.cs) and the complete solution can be found [here](https://github.com/ThingLabsIo/IoTLabs/tree/master/RPi3/IoTLightSensor).
 
 ## Run the Application
 Now you can run the application on your Raspberry Pi 3 and not only will you see the indicator bar changing, but you will also see the log of messages being sent to Azure IoT Hub at a rate of one per second.

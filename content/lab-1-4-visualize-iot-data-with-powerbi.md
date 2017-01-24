@@ -11,7 +11,7 @@ input data stream as the data coming from your IoT Hub. Next you will define an 
 will write a SQL-like query that collects data coming in on the input stream and routes it to the output stream. 
 
 ## Create the Stream Analytics Job
-Open a new browser tab and navigate to [https://portal.azure.com](https://portal.azure.com){:target="_blank"}. Login if necessary. Click on the __NEW__ icon in the lower-left corner.
+Open a new browser tab and navigate to [https://portal.azure.com](https://portal.azure.com). Login if necessary. Click on the __NEW__ icon in the lower-left corner.
 
 ![Windows Azure Portal v1](/images/photon_lab07_5.png)
 

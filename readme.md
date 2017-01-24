@@ -75,10 +75,12 @@ We have a **total of 15 IoT Kits** and plenty of sensors. We ask everyone to **m
 
 ### [Azure Pass](#azure-pass)
 
-The Azure Pass allow you to access and use Microsoft Azure without any feature limitation. You can redeem promo codes via the redemption site, [www.microsoftazurepass.com](https://www.microsoftazurepass.com/), which entitles you to activate the Azure account. 
+In this labs you will use Microsoft Azure as the cloud backend for your IoT solution. For that we will use **Azure Passes**. The Azure Pass allow you to access and use Microsoft Azure without any feature limitation. You can redeem promo codes via the redemption site, [www.microsoftazurepass.com](https://www.microsoftazurepass.com/), which entitles you to activate the Azure account. 
 Passes are limited to 1-month, $100, whichever comes first. Unlike the Azure Access program. Azure passes do not require your credit card information. Azure passes are typically used for customer PoC’s, field and partner training events, marketing campaigns, and other events.  
 
-[Redeem you Microsoft Azure Pass here](https://www.microsoftazurepass.com/)
+ [Redeem you Microsoft Azure Pass here](https://www.microsoftazurepass.com/)
+
+If you have an MSDN Subscription you may be eligible for free credits to Microsoft Azure every month. Check your [MSDN account](https://msdn.microsoft.com/subscriptions/manage/) page for details.
 
 ### [Labs](#labs)
 
