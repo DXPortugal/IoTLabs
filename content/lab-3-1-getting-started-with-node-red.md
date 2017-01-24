@@ -74,11 +74,10 @@ You can then access the Node-RED editor at [http://localhost:1880](http://localh
 
 ## Install Node-Red node for Azure IoT Hub
 
-
 1. Clone or download the [Node.js SDK for Microsoft Azure IoT](https://github.com/Azure/azure-iot-sdk-node). 
    You can download the zip or clone the repo by executing <code>git clone https://github.com/Azure/azure-iot-sdk-node.git</code>
 
-![Node.js SDK for Microsoft Azure IoT Clone/Download](lab3_nodejs-iot-sdk-download-clone.png)
+![Node.js SDK for Microsoft Azure IoT Clone/Download](/images/lab3_nodejs-iot-sdk-download-clone.png)
 
 2. Navigate to repo root folder and then the node-red node folder: **device\node-red**. Check there is an existant package.json file. This json file corresponds to the node package description.
 
@@ -90,6 +89,17 @@ You can then access the Node-RED editor at [http://localhost:1880](http://localh
 
 4. To validate this installation, access the Node-Red editor, one more time at [http://localhost:1880](http://localhost:1880). You may have to restart node-red (Press Ctrl-C to stop the server).
 
+### Take a tour on Node-Red 
+
+Now that you have node-RED running, let's take a look at the flow designer. It's a clean editor where you will be creating your flows. It's devided in areas with different goals:
+
+ * **Flow**: This is the main area. You will be designing and running your flow from this area;
+ * **Nodes**: Here you will have your node list. It will be your toolbar do design your flow. You can drag & drop nodes to the flow area;
+ * **Deploy**: The Deploy button will save all changes done in the flow, but will also deploy it so you can execute the logic;
+ * **Info**: This area will show detailed information about any node you select;
+ * **Debug**: The Debug console will be very important while testing or running your flows. Information will be displayed in this blade.
+
+![Node-RED User Interface](/images/lab3_node-red-ui.png)
 
 ### Summary
 You've now installed Node-RED and made the Node-Red node for Azure IoT Hub, available to be used in your flows. From now on, everytime you start Node-RED, this node will be available to connect your flow to Microsoft IoT Hub, so you can ingest data.  

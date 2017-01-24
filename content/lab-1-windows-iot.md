@@ -3,12 +3,7 @@
 
 This Internet of Things (IoT) Lab begins by showing you how to use Windows 10 IoT Core to connect sensors and devices. You will then be shown how to connect a device to the Cloud. Next you will be shown how to leverage Microsoft Azure services to collect data and control devices.  
 
-###Prep Work
-[Getting Started](/content/lab-1-getting-started.md) : This is a step-by-step guide to preparing your computer for this workshop. Estimated time to complete: **60-minutes**. 
 
-###Setting Up Your Raspberry Pi 3
-The Raspberry Pi 3 is a low cost credit-card sized computer that plugs into a computer monitor or TV, and uses a standard keyboard and mouse.
-[In this lab](/content/lab-1-setting-up-your-rpi.md) you will install Windows 10 IoT Core on your Raspberry Pi 3. Estimated time to complete: **30-minutes**.
 
 ###Lab 1.1: Hello, Windows IoT!
 [In this lab](/content/lab-1-1-hello-windows-iot.md) you will create a simple Thing using a Raspberry Pi 3 running Windows 10 IoT Core.
