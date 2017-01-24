@@ -3,19 +3,22 @@
 > [Node-RED](https://nodered.org/) is a tool for wiring together hardware devices, APIs and online services in new and interesting ways.
 
 ### What you will do
-Install and understand [Node-RED](https://nodered.org/) 
+Understand [Node-RED](https://nodered.org/) and it's concepts. Because the best way to learn is getting hands dirty, you will install Node-RED and the Node-Red node for Azure IoT Hub. 
 
 ### What you will learn
 In this article, you will learn:
+* What is Node-RED and Node-RED nodes.
 * How to install node-RED.
+* How to install Node-Red node for Azure IoT Hub.
 
 ### What you need
 You must have successfully completed the following operations:
 
 * [Configure your device](/content/lab-2-configure-your-device-and-get-the-tools.md)
 * [Get the tools](/content/lab-2-configure-your-device-and-get-the-tools.md#install-git-note)
-* This Tutorial uses the Device Explorer sample executable from the Azure SDK to prevent you from having to program to create a Device in your IoT Hub.  It can be downloaded and installed from this [link](https://github.com/Azure/azure-iot-sdks/releases).  Scroll down to the Downloads section and download and install **SetupDeviceExplorer.msi** on Windows.
+<!--* This Tutorial uses the Device Explorer sample executable from the Azure SDK to prevent you from having to program to create a Device in your IoT Hub.  It can be downloaded and installed from this [link](https://github.com/Azure/azure-iot-sdks/releases).  Scroll down to the Downloads section and download and install **SetupDeviceExplorer.msi** on Windows.
  ![](images/lab3-github-deviceexplorer.png)
+-->
 
 ### What is Node-RED and Node-Red nodes
 
