@@ -10,4 +10,4 @@
 
 ---
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)

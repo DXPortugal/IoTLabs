@@ -80,6 +80,6 @@ In the **[next lab][nextlab]** you will create a more advanced node red flow.
 
 Back to [Lab 3 - IoT with Linux and Node.js](/content/lab-3-linux-iot-node-red.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 [nextlab]: /content/lab-3-3-creating-creating-a-more-advanced-node-red-flow.md

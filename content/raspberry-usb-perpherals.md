@@ -40,4 +40,7 @@ The device will reboot into the update OS (showing gears) to install the package
 
 	* [Get-PnpDevice](https://technet.microsoft.com/en-us/library/mt130248.aspx)
 	* [Get-PnpDeviceProperty](https://technet.microsoft.com/en-us/library/mt130249.aspx)
-	
+
+---
+
+Back to [IoT Labs homepage](/readme.md)

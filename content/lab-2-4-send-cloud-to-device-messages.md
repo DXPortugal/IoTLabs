@@ -71,7 +71,7 @@ In the **[next lab][nextlab]** you will change the on/off behavior of the LED.
 
 Back to [Lab 2 - IoT with Linux and Node.js](/content/lab-2-linux-node-iot.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 
 ---

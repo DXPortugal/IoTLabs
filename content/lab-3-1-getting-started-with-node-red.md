@@ -110,6 +110,6 @@ In the **[next lab][nextlab]** you will start using Node-RED, learning the basic
 
 Back to [Lab 3 - IoT with Linux and Node.js](/content/lab-3-linux-iot-node-red.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 [nextlab]: /content/lab-3-2-creating-your-first-flow.md

@@ -168,7 +168,7 @@ In the **[next lab][nextlab]** you will send messages from the cloud (Azure IoT 
 
 Back to [Lab 2 - IoT with Linux and Node.js](/content/lab-2-linux-node-iot.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 ---
 

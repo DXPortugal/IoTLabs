@@ -243,7 +243,7 @@ In the [next lab][nextlab] you will set up a Microsoft Azure IoT Hub that will a
 
 Back to [Lab 1 - Windows IoT](/content/lab-1-windows-iot.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 ---
 

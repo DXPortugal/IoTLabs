@@ -84,5 +84,5 @@ This lab demonstrates how to customize messages so that the sample application c
 
 Back to [Lab 2 - IoT with Linux and Node.js](/content/lab-2-linux-node-iot.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 

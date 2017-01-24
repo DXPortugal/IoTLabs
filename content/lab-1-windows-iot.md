@@ -23,7 +23,7 @@ Estimated time to complete: **30-minutes**.
 
 ---
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 [general-logo]: ./images/banner-geral.png "IoT Labs"
 [general-logo-guarda]: ./images/banner-guarda.png "IoT Labs"

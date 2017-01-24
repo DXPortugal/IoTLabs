@@ -138,7 +138,7 @@ Congratulations! In this hands-on workshop you experienced an IoT solution end-t
 
 Back to [Lab 1 - Windows IoT](/content/lab-1-windows-iot.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 ---
 

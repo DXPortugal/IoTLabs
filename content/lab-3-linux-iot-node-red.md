@@ -25,5 +25,5 @@ Estimated time to complete: **15-minutes**.
 
 ---
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 

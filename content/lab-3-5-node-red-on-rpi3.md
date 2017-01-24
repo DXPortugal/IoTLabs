@@ -92,5 +92,5 @@ You have also learned how to use functions and add some logic to your flow.
 
 Back to [Lab 3 - IoT with Linux and Node.js](/content/lab-3-linux-iot-node-red.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 

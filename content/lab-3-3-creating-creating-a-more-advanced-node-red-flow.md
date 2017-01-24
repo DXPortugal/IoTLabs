@@ -111,6 +111,6 @@ In the **[next lab][nextlab]** you will start sending messages to Azure IoT Hub 
 
 Back to [Lab 3 - IoT with Linux and Node.js](/content/lab-3-linux-iot-node-red.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 [nextlab]: /content/lab-3-4-azure-iot-hub-examples.md

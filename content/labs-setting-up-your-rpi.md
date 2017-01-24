@@ -67,9 +67,7 @@ We leave you additional documentation, that may become handly:
 
 ---
 
-Back to [Lab 1 - Windows IoT](/content/lab-1-windows-iot.md)
-
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 ---
 

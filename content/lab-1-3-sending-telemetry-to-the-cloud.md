@@ -552,7 +552,7 @@ In the [next lab][nextlab] you will start visualizing IoT data with Power BI.
 
 Back to [Lab 1 - Windows IoT](/content/lab-1-windows-iot.md)
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 ---
 

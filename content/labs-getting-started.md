@@ -47,7 +47,7 @@ In this Getting Started section you prepared your development machine for the su
 
 Advance to **[Setting your Raspberry Pi][nextlab]**.
 
-Back to [IoT Labs homepage](/readme.md)
+Back to [IoT Labs homepage](/readme.md#labs)
 
 ---
 
