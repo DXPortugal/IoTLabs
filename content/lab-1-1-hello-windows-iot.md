@@ -1,16 +1,15 @@
 # Lab 1.1 - Hello Windows IoT
 
+In this lab you will create a simple *Thing* using the Universal Windows Platform on a Windows 10 IoT device. 
 
-In this lab you will create a simple _Thing_ using the Universal Windows Platform on a Windows 10 IoT device. 
-
-# Wire Up the Device
+## Wire Up the Device
 The Raspberry Pi 3 connects to the physical world through the GPIO pins. GPIO stands for General Purpose Input/Output and refers to the two rows of pins on the Raspberry Pi 3. The GPIO pins are a physical interface between the Raspberry Pi 3 and the physical world. Through your app you can designate pins to either receive input or send output. The inputs can be from switches, sensors or other devices. The outputs can be LEDs, servos, motors or countless other devices. Twenty-six of the 40 pins are GPIO pins; the others are power, ground, or reserved pins.
 
-![Raspberry Pi 3 pin Map](/images/RPi3/rpi12_pinout.png)
+![Raspberry Pi 3 pin Map](/images/labs-rp2-pinout.png)
 
 Wire the Raspberry Pi 3 to  the solderless breadboard as  described below.
 
-![Blinky/Hello, World Wiring](/images/RPi3/RPi3_hello_windows_bb.png)
+![Blinky/Hello, World Wiring](/images/lab1_rpi2-hello-windows-bb.png)
 
 1. GPIO 12 is connected to the positive (longer) lead on the LED. In the app you will build in this workshop, you will control whether or not GPIO pin 12 sends voltage over the circuit.
 2. The negative (shorter) lead on the LED is connected to a resistor to reduce the amount of voltage pulled through the circuit.
@@ -23,27 +22,27 @@ A Universal Windows app is a Windows experience that is built upon the Universal
 
 ## Create a Blank Universal App
 
-1. Launch Visual Studio and start a new __Blank App (Universal Windows)__ (found in the _C# -> Windows -> Universal_ node).
-2. Name the application _HelloWindowsIoT_.
+1. Launch Visual Studio and start a new **Blank App (Universal Windows)** (found in the *C# -> Windows -> Universal* node).
+2. Name the application *HelloWindowsIoT*.
 
-![Create a blank Universal Windows Application](/images/RPi3/RPi3_new_universal.png)
+![Create a blank Universal Windows Application](/images/lab1_rpi2-new-universal.png)
 
 ## Add the Windows IoT Extensions for the UWP
-The _Windows IoT Extenstions for the UWP_ are not included in a new Blank Application by default. The IoT extensions enable namespaces, such as <code>Windows.Devices.Gpio</code> to be referenced and uses in the application. You must add a reference to the _Windows IoT Extensions for the UWP_.
+The *Windows IoT Extenstions for the UWP* are not included in a new Blank Application by default. The IoT extensions enable namespaces, such as <code>Windows.Devices.Gpio</code> to be referenced and uses in the application. You must add a reference to the *Windows IoT Extensions for the UWP*.
 
- 1. Click on the _Project_ menu and select _Add Reference_.
- 2. In the Reference Manager dialog, expand the _Universal Windows_ node and select _Extensions_.
- 3. In the list of extensions,check the box next to _Windows IoT Extensions for the UWP_ and click __OK__. (Make sure to select the same version number as the OS running on the Raspberry Pi 3.) It is easy to accidently select the _Windows Mobile Extensions for the UWP_, (which is just below the IoT extensions) so take extra care to make sure you have added the correct reference.
+ 1. Click on the *Project* menu and select *Add Reference*.
+ 2. In the Reference Manager dialog, expand the *Universal Windows* node and select *Extensions*.
+ 3. In the list of extensions,check the box next to *Windows IoT Extensions for the UWP* and click **OK**. (Make sure to select the same version number as the OS running on the Raspberry Pi 3.) It is easy to accidently select the *Windows Mobile Extensions for the UWP*, (which is just below the IoT extensions) so take extra care to make sure you have added the correct reference.
  
-![Add the Windows IoT Extensions for the UWP](/images/RPi3/RPi3_install_iotextensions.png)
+![Add the Windows IoT Extensions for the UWP](/images/lab1_rpi2-install-iotextensions.png)
 
 ## Design the App UI
 This application has a UI that duplicates what is happening with the hardware. (It has a blinking virtual LED on-screen.)
 
-1. Open the _MainPage.xaml_ file  (This is the layout definition for the initial page that loads when the app is run.) 
+1. Open the *MainPage.xaml* file  (This is the layout definition for the initial page that loads when the app is run.) 
 1. Replace the <code>&lt;Grid&gt;...&lt;/Grid&gt;</code> code with the following:
 
-{% highlight xml %}
+```csharp
 <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
         <Ellipse x:Name="LedGraphic" Fill="LightGray" Stroke="White" Width="100" Height="100" Margin="10"/>
@@ -51,29 +50,29 @@ This application has a UI that duplicates what is happening with the hardware. (
         <TextBlock x:Name="GpioStatus" Text="Waiting to initialize GPIO..." Margin="10,50,10,10" TextAlignment="Center" FontSize="26"/>
     </StackPanel>
 </Grid>
-{% endhighlight %}
+```
 
 ## Code the App Logic
-Throughout this lab you will use a feature in Visual Studio called _light bulbs_. Light bulbs are a new productivity feature in Visual Studio 2015. They are icons that appear in the Visual Studio editor and that you can click to perform quick actions including refactoring fixing errors. Light bulbs bring error-fixing and refactoring assistance into a single focal point, often right on the line where you are typing. As you write the code in this lab you will add calls to methods that don't yet exist. The editor will indicate this to you by putting a red squiggle underline beneath the method call. When you hover over the offending code a light bulb will appear and you can expand it to see options for generating the missing method. 
+Throughout this lab you will use a feature in Visual Studio called *light bulbs*. Light bulbs are a new productivity feature in Visual Studio 2015. They are icons that appear in the Visual Studio editor and that you can click to perform quick actions including refactoring fixing errors. Light bulbs bring error-fixing and refactoring assistance into a single focal point, often right on the line where you are typing. As you write the code in this lab you will add calls to methods that don't yet exist. The editor will indicate this to you by putting a red squiggle underline beneath the method call. When you hover over the offending code a light bulb will appear and you can expand it to see options for generating the missing method. 
 
 ### Add 'using' Statements
-1. Open the _MainPage.xaml.cs_ file. This is the code behind the layout for the MainPage.xaml. 
-2. Add the following to the _using_ statements to the end of the list of similar _using_ statements at the top of the file. 
+1. Open the *MainPage.xaml.cs* file. This is the code behind the layout for the MainPage.xaml. 
+2. Add the following to the *using* statements to the end of the list of similar *using* statements at the top of the file. 
 
-{% highlight csharp %}
+```csharp
 // Enable asynchronous tasks
 using System.Threading.Tasks;
 // Enable access to the GPIO bus on the Raspberry Pi 3
 using Windows.Devices.Gpio;
-{% endhighlight %}
+```
 
 ### Define Class-level Constants and Variables
 There are a number of constants and variables that you will be using throughout this application. Define these in the <code>MainPage</code> class definition.
  
-1. Locate the <code>public sealed partial class MainPage : Page</code> class definition. This defines a class called _MainPage_ and inherits all of the capabilities of the _Page_ class).
+1. Locate the <code>public sealed partial class MainPage : Page</code> class definition. This defines a class called *MainPage* and inherits all of the capabilities of the *Page* class).
 2. 2. Add the following constant and variable definitions:
 
-{% highlight csharp %}
+```csharp
 public sealed partial class MainPage : Page
 {
         // Define the physical pin connected to the LED.
@@ -95,7 +94,7 @@ public sealed partial class MainPage : Page
             // TODO: Create an instance of a Timer that will raise an event every 500ms
         }
 }
-{% endhighlight %}
+```
 
 ### Create a Timer to Control the LED
 The LED connected to GPIO pin 12 will turn on and off at an interval defined by the <code>timer</code> object. The <code>TODO</code> comment is the placeholder for configuring the <code>timer</code>. Following the call to <code>InitializeComponent</code>, configure the <code>timer</code> to raise an event every 500ms. (Soon you will create an event handler that will do the real work.) 
@@ -103,30 +102,30 @@ The LED connected to GPIO pin 12 will turn on and off at an interval defined by 
 1. Locate the <code>// TODO: Create an instance of a Timer that will raise an event every 500ms</code> comment in the <code>public MainPage()</code> constructor.
 2. Replace the comment with the following code. 
 
-{% highlight csharp %}
+```csharp
 // Create an instance of a Timer that will raise an event every 500ms
 timer = new DispatcherTimer();
 timer.Interval = TimeSpan.FromMilliseconds(500);
 timer.Tick += Timer_Tick;
 
 // TODO: Initialize the GPIO bus
-{% endhighlight %}
+```
 
 The <code>Timer_Tick</code> reference should have a red squiggle under it. This indicates that that event handler doesn't exist yet. 
 
 ### Handle the Timer.Tick Event
-The <code>timer</code> will raise an event at the interval it was configured with, which is 500ms in this case. When the _Timer.Tick_ event is fired the application will query the current state of the LED and if it is set to _Low_ (off) then it will be changed to _High_ (on) and the virtual LED on the screen will be filled with the color red. If the state is _High_ then it will be switched to _Low_ and the virtual LED will be filled with the color light gray. You will use <code>pin.Write(pinValue)</code> to execute the change on the GPIO bus.
+The <code>timer</code> will raise an event at the interval it was configured with, which is 500ms in this case. When the *Timer.Tick* event is fired the application will query the current state of the LED and if it is set to *Low* (off) then it will be changed to *High* (on) and the virtual LED on the screen will be filled with the color red. If the state is *High* then it will be switched to *Low* and the virtual LED will be filled with the color light gray. You will use <code>pin.Write(pinValue)</code> to execute the change on the GPIO bus.
 
-You can create an event handler that will fire every time the _Timer.Tick_ event is raised. You can do this using the Visual Studio _light bulb_ refactoring tool. 
+You can create an event handler that will fire every time the *Timer.Tick* event is raised. You can do this using the Visual Studio *light bulb* refactoring tool. 
 
-1. Hover the mouse over the _Timer\_Tick_ reference until a light bulb appears. 
-2. Click the down arrow and select _Generate method 'MainPage.Timer\_Tick'_. 
+1. Hover the mouse over the *Timer\Tick* reference until a light bulb appears. 
+2. Click the down arrow and select *Generate method 'MainPage.Timer_Tick'*. 
 
-![Using Visual Studio light bulb refactoring](/images/RPi3/RPi3_lab01_Timer_Tick.PNG)
+![Using Visual Studio light bulb refactoring](/images/lab1_rpi2-lab01-Timer-Tick.png)
 
-3. Add the following code for the _Timer\_Tick_ event handler.
+3. Add the following code for the *Timer_Tick* event handler.
 
-{% highlight csharp %}
+```csharp
 private void Timer_Tick(object sender, object e)
 {
     // This Timer event will be raised on each timer interval (defined above)
@@ -148,21 +147,21 @@ private void Timer_Tick(object sender, object e)
     // Write the state to to pin
     pin.Write(pinValue);
 }
-{% endhighlight %}
+```
 
-Of course, <code>pin</code> is _null_ - you haven't done anything more than simply define it thus far. (You defined it in the class-level variables as <code>private GpioPin pin;</code>.) You need to initialize the GPIO controller to get access to the <code>pin</code>.
+Of course, <code>pin</code> is *null* - you haven't done anything more than simply define it thus far. (You defined it in the class-level variables as <code>private GpioPin pin;</code>.) You need to initialize the GPIO controller to get access to the <code>pin</code>.
 
 ### Initialize the GPIO Controller
 The GPIO controller is the object that provides access to the GPIO bus. It exposes the GPIO pins that you are connecting physical things to. 
 
 1. Replace the <code>// TODO: Initialize the GPIO bus</code> comment in the <code>public MainPage()</code> constructor with the following: 
 
-{% highlight csharp %}
+```csharp
 // Initialize the GPIO bus
 InitGpioAsync();
-{% endhighlight %}
+```
 
-2. Just like you did with the _Timer\_Tick_ code earlier, use the refactoring _light bulb_ tool to generate the <code>InitGpioAsync()</code> method. In the _InitGpioAsync()_ method you will get the instance of the default GPIO controller. If the GPIO controller instance is _null_ then the device the app is running on doesn't support GPIO, and you will display a message on the screen indicating this, and that will be the end of the app functionality. If there is a GPIO controller instance, then you will use it to open the GPIO pin that you have connected to the LED and prepare it for use. Add a _null_ check on the _pin_ instance. If it is not _null_, go ahead and start the timer. The timer will begin invoking the _Timer\_Tick_ event every 500ms. 
+2. Just like you did with the *Timer_Tick* code earlier, use the refactoring *light bulb* tool to generate the <code>InitGpioAsync()</code> method. In the *InitGpioAsync()* method you will get the instance of the default GPIO controller. If the GPIO controller instance is *null* then the device the app is running on doesn't support GPIO, and you will display a message on the screen indicating this, and that will be the end of the app functionality. If there is a GPIO controller instance, then you will use it to open the GPIO pin that you have connected to the LED and prepare it for use. Add a *null* check on the *pin* instance. If it is not *null*, go ahead and start the timer. The timer will begin invoking the *Timer_Tick* event every 500ms. 
 
 <blockquote>
 The GpioController.GetDefaultAsync() asynchronous method was added to the Windows IoT Extensions for the UWP in the 10.0.10586 version. If you are running Windows 10 (version 10.0.10240) or earlier, the GpioController.GetDefaultAsync() method will not work.
@@ -170,7 +169,7 @@ The GpioController.GetDefaultAsync() asynchronous method was added to the Window
 
 Add the following code for the <code>InitGpioAsync()</code> method.
 
-{% highlight csharp %}
+```csharp
 private async Task InitGpioAsync()
 {
     // Get the default GPIO controller
@@ -203,31 +202,29 @@ private async Task InitGpioAsync()
         timer.Start();
     }
 }
-{% endhighlight %}
+```
 
 Note that we added the <code>async</code> modifier to the method signature and changed the return type from <code>void</code> to <code>Task</code>. 
 
-If you want to compare your code with the master lab code, you can find it [here](https://github.com/ThingLabsIo/IoTLabs/blob/master/RPi3/HelloWindowsIoT/HelloWindowsIoT/MainPage.xaml.cs).
-
 # Run the App on the Raspberry Pi 3
-The application is ready to be deployed and run on the Raspberry Pi 3. You must set the target in Visual Studio to _ARM_ and point the debugger at a _Remote Machine_ (your Raspberry Pi 3).
+The application is ready to be deployed and run on the Raspberry Pi 3. You must set the target in Visual Studio to *ARM* and point the debugger at a *Remote Machine* (your Raspberry Pi 3).
 
-1. Select __ARM__ from the _Solution Platforms_ list in the toolbar.
-2. Select __REMOTE MACHINE__ from the _Device_ dropdown list in the toolbar.
+1. Select **ARM** from the *Solution Platforms* list in the toolbar.
+2. Select **REMOTE MACHINE** from the *Device* dropdown list in the toolbar.
 
-![Targeting ARM on a remote machine](/images/RPi3/RPi3_lab01_arm.png)
+![Targeting ARM on a remote machine](/images/lab1_rpi2-lab01-arm.png)
 
-You will be prompted with the _Remote Connections_ dialog. 
+You will be prompted with the *Remote Connections* dialog. 
 
-3. Select your device from the list of _Auto Detected_ devices. (Note: The Raspberry Pi 3 you are working with is named <strong>ThingLabsXX</strong> where the XX is replaced with the number on your Raspberry Pi 3.) If your device is not listed, type your device's name into the _Manual Configuration_ textbox.
-4. Set the _Authentication Mode_ to __Universal (Unencrypted Protocol)__.
-5. Click _Select_.
+3. Select your device from the list of *Auto Detected* devices. (Note: The Raspberry Pi 3 you are working with is named <strong>ThingLabsXX</strong> where the XX is replaced with the number on your Raspberry Pi 3.) If your device is not listed, type your device's name into the *Manual Configuration* textbox.
+4. Set the *Authentication Mode* to **Universal (Unencrypted Protocol)**.
+5. Click *Select*.
 
-![Choose the remote machine to deploy to](/images/RPi3/RPi3_lab01_remote.png)
+![Choose the remote machine to deploy to](/images/lab1_rpi2-lab01-remote.png)
 
-__NOTE:__ You can verify or modify these values by navigating to the project properties (select Properties in the Solution Explorer) and choosing the Debug tab on the left.
+**NOTE:** You can verify or modify these values by navigating to the project properties (select Properties in the Solution Explorer) and choosing the Debug tab on the left.
 
-6. Press __F5__ to run the application and you should see it deploy on the Raspberry Pi 3. You will see the red LED blink in unison with the red circle on the screen. If the red LED is not blinking, but the display on the screen is, recheck your wiring. 
+6. Press **F5** to run the application and you should see it deploy on the Raspberry Pi 3. You will see the red LED blink in unison with the red circle on the screen. If the red LED is not blinking, but the display on the screen is, recheck your wiring. 
 
 # Conclusion &amp; Next Steps
 
