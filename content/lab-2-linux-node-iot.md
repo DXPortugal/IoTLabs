@@ -4,6 +4,7 @@
 In this lab, you begin by learning the basics of working with Raspberry Pi 3 that's running Raspbian. You then learn how to seamlessly connect your devices to the cloud by using Azure IoT Hub.
 
 ###Configure your device and get the tools
+![Configure your device and get the tools](/images/lab2_configure-device.png)
 [In this lab](/content/lab-2-configure-your-device-and-get-the-tools.md) you will Configure Raspberry Pi 3 for first-time use and install Raspbian. Raspbian is a free operating system that is optimized for the Raspberry Pi hardware. Download the tools and software to build and deploy your first application for Raspberry Pi 3. 
 Estimated time to complete: **50-minutes**.
 
@@ -13,16 +14,19 @@ Estimated time to complete: **50-minutes**.
 Estimated time to complete: **5-minutes**. 
 
 ###Lab 2.2: Create your IoT hub and register device
+![Create your IoT hub and register device](/images/lab2_create-iot-hub.png)
 [In this lab](/content/lab-2-2-create-your-iot-hub-and-register-device.md) you will provision your Azure IoT hub, and create a device in the IoT hub.
 
 Estimated time to complete: **20-minutes**.
 
 ###Lab 2.3: Send device-to-cloud messages
+![Send device-to-cloud messages](/images/lab2_device-to-cloud-messages.png)
 [In this lab](/content/lab-2-3-send-device-to-cloud-messages.md) you will send messages from Pi to your IoT hub. You will also create an Azure function app that gets incoming messages from your IoT hub and writes them to Azure Table storage.
 
 Estimated time to complete: **25-minutes**. 
 
 ###Lab 2.4: Send cloud-to-device messages
+![Send cloud-to-device messages](/images/lab2_cloud-to-device-messages.png)
 [In this lab](/content/lab-2-4-send-cloud-to-device-messages.md) you will send messages from your Azure IoT hub to Raspberry Pi 3. The messages control the on and off behavior of the LED that is connected to Pi. A sample application is prepared for you to achieve this task.
 
 Estimated time to complete: **20-minutes**.
