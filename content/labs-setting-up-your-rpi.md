@@ -21,8 +21,11 @@ Once the Windows IoT Core Dashboard is installed, use it to flash the microSD ca
 3. Use the dropdown list to make *Device Type* = **Raspberry Pi 2 & 3**.
 4. Select **Windows 10 IoT Core**.
 4. Select the microSD card in the *Drive* dropdown list.
-5. Check the box for *I accept the software license terms* (of course you have already read them).
-6. Click the **Download and install** button.
+5. If you're using a wireless connection, make sure your development computer is alread in the wireless network. If so you shoud have it listed in the Wi-Fi Network connections. Select the one you want.*
+6. Check the box for *I accept the software license terms* (of course you have already read them).
+7. Click the **Download and install** button.
+
+> *If no wi-fi connection shows up, don't worry: we'll configure the wi-fi with a wired connection, afterwards.
 
 ![Download and install](/images/labs-windows10-iot-core-dashboard-setup-new-device.png)
 
@@ -38,9 +41,11 @@ The download and install could take some time depending on your bandwidth and th
 You are now ready to connect and power on your Raspberry Pi 3.
 
 1. Insert the micro SD card with the Windows 10 IoT Core image on it into your Raspberry Pi 3. (The slot is on the underside, on the opposite edge from the side with the USB ports.)
-2. Connect a network cable from your local network to the Ethernet port on the Raspberry Pi 3. Your development device must be on the same network.
-3. Connect an HDMI monitor to the HDMI port on the board.
-4. Connect the power supply to the micro USB port on the board. You must power this from the 5V 2A adapter - USB power from your computer is insufficient.
+2. Connect a network cable from your local network to the Ethernet port on the Raspberry Pi 3. 
+3. Instead, if you are provided with a wireless network, it should be configured, already
+3. Your development device must be on the same network.
+4. Connect an HDMI monitor to the HDMI port on the board.
+5. Connect the power supply to the micro USB port on the board. You must power this from the 5V 2A adapter - USB power from your computer is insufficient.
 
 Windows 10 IoT Core will boot on power-up. The first boot may take a few minutes.
 
