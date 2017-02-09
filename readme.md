@@ -28,7 +28,7 @@ Take a look at this starting page, and then head to the [Labs](./content/readme.
  * [Portuguese Community](#portuguese-community)
  * [Conclusion & Next Steps](#conclusions-next-steps)
 
-The **IoT Labs** use Windows 10 IoT, typically running on a Raspberry Pi 3 or 3, although other boards are also capable of running Windows 10 IoT. If you will be going through any of these labs you need to first prepare your **development environment**.
+The **IoT Labs** use Windows 10 IoT, typically running on a Raspberry Pi 2 or 3, although other boards are also capable of running Windows 10 IoT. If you will be going through any of these labs you need to first prepare your **development environment**.
 
 ### [Agenda](#agenda)
 
