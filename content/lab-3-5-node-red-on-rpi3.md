@@ -1,7 +1,7 @@
 # Lab 3.5: Node-RED on your Raspberry Pi
 
 ### What you will do
-Learn basics around Node-RED and the visual editor. This will allow you to start designing your flows and take advantage of Node-RED. You will run Node-RED in your local machine and create your firs flow. 
+Learn basics around Node-RED and the visual editor. This will allow you to start designing your flows and take advantage of Node-RED. You will run Node-RED in your local machine and create your first flow. 
 
 ### What you will learn
 In this article, you will learn:
