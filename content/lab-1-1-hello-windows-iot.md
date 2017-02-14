@@ -70,7 +70,7 @@ using Windows.Devices.Gpio;
 There are a number of constants and variables that you will be using throughout this application. Define these in the <code>MainPage</code> class definition.
  
 1. Locate the <code>public sealed partial class MainPage : Page</code> class definition. This defines a class called *MainPage* and inherits all of the capabilities of the *Page* class).
-2. 2. Add the following constant and variable definitions:
+2. Add the following constant and variable definitions:
 
 ```csharp
 public sealed partial class MainPage : Page
