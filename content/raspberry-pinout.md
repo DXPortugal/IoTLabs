@@ -177,7 +177,7 @@ Let's look at the I2C bus available on this device.
 
 There is one I2C controller **I2C1** exposed on the pin header with two lines **SDA** and **SCL**. 1.8K&#x2126; internal pull-up resistors are already installed on the board for this bus.
 
-{:.table.table-bordered}
+
 | Signal Name | Header Pin Number | Gpio Number |
 |-------------|-------------------|-------------|
 | SDA         | 3                 | 2           |
