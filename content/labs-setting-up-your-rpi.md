@@ -33,7 +33,7 @@ Once the Windows IoT Core Dashboard is installed, use it to flash the microSD ca
 
 ![Accept License](/images/labs-windows10-iot-core-dashboard-setup-new-device-continue.png)
 
-The download and install could take some time depending on your bandwidth and the size of the microSD card. Whe it is complete you will see the *You SD card is ready* screen.
+The download and install could take some time depending on your bandwidth and the size of the microSD card. When it is complete you will see the *You SD card is ready* screen.
 
 ![Your SD card is ready](/images/labs-windows10-iot-core-dashboard-setup-new-device-ready.png)
 
