@@ -45,7 +45,7 @@ You are now ready to connect and power on your Raspberry Pi 3.
 3. Instead, if you are provided with a wireless network, it should be configured, already
 3. Your development device must be on the same network.
 4. Connect an HDMI monitor to the HDMI port on the board.
-5. Connect the power supply to the micro USB port on the board. You must power this from the 5V 2A adapter - USB power from your computer is insufficient.
+5. Connect the power supply to the micro USB port on the board. You must power this from the 5V 2A adapter - USB power from your computer may be insufficient.
 
 Windows 10 IoT Core will boot on power-up. The first boot may take a few minutes.
 
