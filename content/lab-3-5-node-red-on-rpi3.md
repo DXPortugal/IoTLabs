@@ -36,15 +36,15 @@ Autostart Node-RED on boot
 
 ## Adding johnny-five
 We'll need to add some packages to node-red for johnny-five in the root's .node-red directory:
-sudo su -
-cd .node-red
-npm i node-red-contrib-gpio
+- sudo su -
+- cd .node-red
+- npm i node-red-contrib-gpio
 That takes a couple of minutes to finish on a raspberry pi 2, and gets us the GPIO and johnny-five nodes. At this point we could plug in an arduino uno to a USB port and get started, however let's add raspi-io so that we can use the pi's onboard pins.
-npm i raspi-io
+- npm i raspi-io
 At this point we'll need to reboot.
-sudo reboot
+- sudo reboot
 Then start node red up again.
-sudo node-red-start
+- sudo node-red-start
 
 
 ## Blinking an LED
@@ -52,9 +52,9 @@ Once again, point your browser to http://<YOUR PI's IP ADDRESS>:1880
 Drop a johnny-five node into the node-red workspace and double click it. Click the edit button to configure a new nodebot, and select Raspberry Pi as the nodebot type and click Add.
 
 Then in the onReady code block you can do something like:
-var led = new five.Led('GPIO4');
+- var led = new five.Led('GPIO4');
 
-led.blink(500);
+- led.blink(500);
 Click the deploy button on the upper-right of node-red.
 If you have an LED connected to GPIO4 it should start blinking!
 
