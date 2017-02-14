@@ -51,7 +51,7 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
 5. Create an IoT hub in the iot-sample resource group by running the following command:
 
    ```bash
-   azure iot hub create --name {my hub name} --resource-group iot-sample
+   azure iothub create --name {my hub name} --resource-group iot-sample --location northeurope --sku-name S1 --units 1
    ```
 
    By default, the tool creates an IoT Hub in the Free pricing tier. For more infomation, see [Azure IoT Hub pricing](https://azure.microsoft.com/pricing/details/iot-hub/).
