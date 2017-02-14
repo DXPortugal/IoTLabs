@@ -52,7 +52,7 @@ Windows 10 IoT Core will boot on power-up. The first boot may take a few minutes
 ![Default app](/images/labs-rpi2-defaultapp.png)
 
 ### Set the Machine Name and Password
-Once the Raspberry Pi 3 has booted up, it will appear in the *My devices* tab of the IoT Dashboard - by default it will have the name **minwinpc** and an Administrator password of **p@ssw0rd**. It is recommend that you change both of these to avoid confusion with other devices on your network.
+Once the Raspberry Pi 3 has booted up, it will appear in the *My devices* tab of the IoT Dashboard - by default it will have the name **Administrator** and an Administrator password of **q1w2e3.**. It is recommend that you change both of these to avoid confusion with other devices on your network.
 
 1. Click on the stylus icon to edit the Raspberry Pi 3.
 2. Change the password if you would like.
