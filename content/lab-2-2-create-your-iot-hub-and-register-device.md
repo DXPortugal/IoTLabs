@@ -30,7 +30,7 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
 2. Set the default subscription that you want to use by running the following command:
 
    ```bash
-   azure account set --subscription {subscription id or name}
+   azure account set {subscription id or name}
    ```
 
    `subscription ID or name` can be found in the output of the `az login` or the `az account list` command.
