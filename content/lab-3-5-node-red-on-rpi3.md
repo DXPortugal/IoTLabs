@@ -31,8 +31,8 @@ Unfortunately this only gets us npm version 1.4.21 which wont work for us, but t
 - sudo npm install node-red-contrib-opi-gpio 
 
 Autostart Node-RED on boot
-sudo systemctl enable nodered.service
-sudo reboot
+- sudo systemctl enable nodered.service
+- sudo reboot
 
 ## Adding johnny-five
 We'll need to add some packages to node-red for johnny-five in the root's .node-red directory:
