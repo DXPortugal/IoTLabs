@@ -48,7 +48,7 @@ Update the `arm-template-param.json` file in Visual Studio Code.
 After you update the `arm-template-param.json` file, deploy the resources to Azure by running the following command:
 
 ```bash
-az group deployment create --template-file arm-template.json --parameters @arm-template-param.json -g iot-sample
+azure group deployment create --template-file arm-template.json --parameters @arm-template-param.json -g iot-sample
 ```
 
 It takes about five minutes to create these resources. While the resource creation is in progress, you can move on to the next article.
@@ -61,7 +61,7 @@ The device connection string is used by your Pi to connect to your IoT hub. The 
 * List all your IoT hubs in your resource group by running the following Azure CLI command:
 
 ```bash
-az iot hub list -g iot-sample --query [].name
+azure iot hub list -g iot-sample --query [].name
 ```
 
 Use `iot-sample` as the value of `{resource group name}` if you didn't change the value.
@@ -69,7 +69,7 @@ Use `iot-sample` as the value of `{resource group name}` if you didn't change th
 * Get the IoT hub connection string by running the following Azure CLI command:
 
 ```bash
-az iot hub show-connection-string --name {my hub name} -g iot-sample
+azure iot hub show-connection-string --name {my hub name} -g iot-sample
 ```
 
 `{my hub name}` is the name that you specified when you created your IoT hub and registered Pi.
@@ -77,7 +77,7 @@ az iot hub show-connection-string --name {my hub name} -g iot-sample
 * Get the device connection string by running the following command:
 
 ```bash
-az iot device show-connection-string --hub-name {my hub name} --device-id myraspberrypi -g iot-sample
+azure iot device show-connection-string --hub-name {my hub name} --device-id myraspberrypi -g iot-sample
 ```
 
 Use `myraspberrypi` as the value of `{device id}` if you didn't change the value.
@@ -131,8 +131,8 @@ To read messages stored in your Azure Table storage, follow these steps:
 1. Get the connection string by running the following commands:
 
    ```bash
-   az storage account list -g iot-sample --query [].name
-   az storage account show-connection-string -g iot-sample -n {storage name}
+   azure storage account list -g iot-sample --query [].name
+   azure storage account show-connection-string -g iot-sample -n {storage name}
    ```
 
    The first command retrieves the `storage name` that is used in the second command to get the connection string. Use `iot-sample` as the value of `{resource group name}` if you didn't change the value.
