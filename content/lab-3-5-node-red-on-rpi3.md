@@ -39,6 +39,7 @@ We'll need to add some packages to node-red for johnny-five in the root's .node-
 - sudo su -
 - cd .node-red
 - npm i node-red-contrib-gpio
+
 That takes a couple of minutes to finish on a raspberry pi 2, and gets us the GPIO and johnny-five nodes. At this point we could plug in an arduino uno to a USB port and get started, however let's add raspi-io so that we can use the pi's onboard pins.
 - npm i raspi-io
 At this point we'll need to reboot.
