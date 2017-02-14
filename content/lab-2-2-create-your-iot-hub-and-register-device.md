@@ -22,7 +22,7 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
 1. Sign in to your Azure account by running the following command:
 
    ```bash
-   az login
+   azure login
    ```
 
    All your available subscriptions are listed after a successful sign-in.
@@ -30,7 +30,7 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
 2. Set the default subscription that you want to use by running the following command:
 
    ```bash
-   az account set --subscription {subscription id or name}
+   azure account set --subscription {subscription id or name}
    ```
 
    `subscription ID or name` can be found in the output of the `az login` or the `az account list` command.
@@ -38,12 +38,12 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
 3. Register the provider by running the following command. Resource providers are services that provide resources for your application. You must register the provider before you can deploy the Azure resource that the provider offers.
 
    ```bash
-   az provider register -n "Microsoft.Devices"
+   azure provider register -n "Microsoft.Devices"
    ```
 4. Create a resource group named iot-sample in the North Europe region by running the following command:
 
    ```bash
-   az group create --name iot-sample --location northeurope
+   azure group create --name iot-sample --location northeurope
    ```
 
    `northeurope` is the location you create your resource group. If you want to use another location, you can run `az account list-locations -o table` to see all the locations Azure supports.
@@ -51,7 +51,7 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
 5. Create an IoT hub in the iot-sample resource group by running the following command:
 
    ```bash
-   az iot hub create --name {my hub name} --resource-group iot-sample
+   azure iot hub create --name {my hub name} --resource-group iot-sample
    ```
 
    By default, the tool creates an IoT Hub in the Free pricing tier. For more infomation, see [Azure IoT Hub pricing](https://azure.microsoft.com/pricing/details/iot-hub/).
@@ -65,10 +65,10 @@ Run the following command:
 
 ```bash
 # For Windows command prompt
-az iot device create --device-id myraspberrypi --hub-name {my hub name} --x509 --output-dir %USERPROFILE%\.iot-hub-getting-started
+azure iot device create --device-id myraspberrypi --hub-name {my hub name} --x509 --output-dir %USERPROFILE%\.iot-hub-getting-started
  
 # For macOS or Ubuntu
-az iot device create --device-id myraspberrypi --hub-name {my hub name} --x509 --output-dir ~/.iot-hub-getting-started
+azure iot device create --device-id myraspberrypi --hub-name {my hub name} --x509 --output-dir ~/.iot-hub-getting-started
 ```
 
 ### Summary
