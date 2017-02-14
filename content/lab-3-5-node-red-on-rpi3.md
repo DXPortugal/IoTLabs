@@ -20,14 +20,15 @@ Run sudo node-red-start the open a web browser to http://<YOUR PI's IP ADDRESS>:
 
 Adding npm
 The raspbian image doesn't include npm, however it is easy to install:
-sudo apt-get update
-sudo apt-get install npm
-Unfortunately this only gets us npm version 1.4.21 which wont work for us, but that's easily updatable:
-sudo npm i npm -g
+- sudo apt-get update
+- sudo apt-get install npm
 
-?? sudo apt-get update && sudo apt-get upgrade
-?? sudo apt-get install nodered
-?? sudo npm install node-red-contrib-opi-gpio 
+Unfortunately this only gets us npm version 1.4.21 which wont work for us, but that's easily updatable:
+- sudo npm i npm -g
+
+- sudo apt-get update && sudo apt-get upgrade
+- sudo apt-get install nodered
+- sudo npm install node-red-contrib-opi-gpio 
 
 Autostart Node-RED on boot
 sudo systemctl enable nodered.service
