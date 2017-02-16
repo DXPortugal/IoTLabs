@@ -218,7 +218,7 @@ You will be prompted with the *Remote Connections* dialog.
 
 3. Select your device from the list of *Auto Detected* devices. (Note: The Raspberry Pi 3 you are working with is named <strong>ptiotXX</strong> where the XX is replaced with the number on your Raspberry Pi 3.) If your device is not listed, type your device's name into the *Manual Configuration* textbox.
 4. Set the *Authentication Mode* to **Universal (Unencrypted Protocol)**.
-5. If Visual Studio asks for a remote debuggin PIN, head to the Web Portal (http://<RPi3 ip address>) and in the homepage you can set the PIN.
+5. If Visual Studio asks for a remote debugging PIN, head to the Web Portal (http://<RPi3 ip address>) and in the homepage you can set the PIN.
 5. Click *Select*.
 
 ![Choose the remote machine to deploy to](/images/lab1_rpi2-lab01-remote.png)
