@@ -77,7 +77,7 @@ public sealed partial class MainPage : Page
 {
         // Define the physical pin connected to the LED.
         private const int LED_PIN = 12;
-        // Deifne a variable to represent the pin as an object.
+        // Define a variable to represent the pin as an object.
         private GpioPin pin;
         // Define a variable to hold the value of the pin (HIGH or LOW).
         private GpioPinValue pinValue;
