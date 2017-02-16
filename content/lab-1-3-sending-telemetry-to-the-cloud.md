@@ -69,7 +69,7 @@ Once the *Windows IoT Extensions for the UWP* are added...
 
 1. Click on the *Project* menu and select *Manage NuGet Packages.*
 2. Use the search field to search for **Microsoft.Azure.Devices.Client**.
-3. Click on the **Install** button to install the package.
+3. Click on the **Install** button to install the package (version 1.2.2 recommended).
 
 ![IoTNightlight Project](/images/lab1_azure-devices-client.png)
 
