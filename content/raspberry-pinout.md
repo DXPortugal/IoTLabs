@@ -21,35 +21,35 @@ Let's look at the GPIO available on this device.
 
 The following GPIO pins are accessible through APIs:
 
-{:.table.table-bordered}
+
 | GPIO# | Power-on Pull | Alternate Functions | Header Pin         |
-|-------|---------------|---------------------|--------------------|
-| 2     | PullUp        | I2C1 SDA            | 3                  |
-| 3     | PullUp        | I2C1 SCL            | 5                  |
-| 4     | PullUp        |                     | 7                  |
-| 5     | PullUp        |                     | 29                 |
-| 6     | PullUp        |                     | 31                 |
-| 7     | PullUp        | SPI0 CS1            | 26                 |
-| 8     | PullUp        | SPI0 CS0            | 24                 |
-| 9     | PullDown      | SPI0 MISO           | 21                 |
-| 10    | PullDown      | SPI0 MOSI           | 19                 |
-| 11    | PullDown      | SPI0 SCLK           | 23                 |
-| 12    | PullDown      |                     | 32                 |
-| 13    | PullDown      |                     | 33                 |
-| 16    | PullDown      | SPI1 CS0            | 36                 |
-| 17    | PullDown      |                     | 11                 |
-| 18    | PullDown      |                     | 12                 |
-| 19    | PullDown      | SPI1 MISO           | 35                 |
-| 20    | PullDown      | SPI1 MOSI           | 38                 |
-| 21    | PullDown      | SPI1 SCLK           | 40                 |
-| 22    | PullDown      |                     | 15                 |
-| 23    | PullDown      |                     | 16                 |
-| 24    | PullDown      |                     | 18                 |
-| 25    | PullDown      |                     | 22                 |
-| 26    | PullDown      |                     | 37                 |
-| 27    | PullDown      |                     | 13                 |
-| 35*   | PullUp        |                     | Red Power LED      |
-| 47*   | PullUp        |                     | Green Activity LED |
+|:-------:|:---------------:|:---------------------:|--------------------:|
+| 2       | PullUp          | I2C1 SDA              | 3                   |
+| 3       | PullUp          | I2C1 SCL              | 5                   |
+| 4       | PullUp          |                       | 7                   |
+| 5       | PullUp          |                       | 29                  |
+| 6       | PullUp          |                       | 31                  |
+| 7       | PullUp          | SPI0 CS1              | 26                  |
+| 8       | PullUp          | SPI0 CS0              | 24                  |
+| 9       | PullDown        | SPI0 MISO             | 21                  |
+| 10      | PullDown        | SPI0 MOSI             | 19                  |
+| 11      | PullDown        | SPI0 SCLK             | 23                  |
+| 12      | PullDown        |                       | 32                  |
+| 13      | PullDown        |                       | 33                  |
+| 16      | PullDown        | SPI1 CS0              | 36                  |
+| 17      | PullDown        |                       | 11                  |
+| 18      | PullDown        |                       | 12                  |
+| 19      | PullDown        | SPI1 MISO             | 35                  |
+| 20      | PullDown        | SPI1 MOSI             | 38                  |
+| 21      | PullDown        | SPI1 SCLK             | 40                  |
+| 22      | PullDown        |                       | 15                  |
+| 23      | PullDown        |                       | 16                  |
+| 24      | PullDown        |                       | 18                  |
+| 25      | PullDown        |                       | 22                  |
+| 26      | PullDown        |                       | 37                  |
+| 27      | PullDown        |                       | 13                  |
+| 35*     | PullUp          |                       | Red Power LED       |
+| 47*     | PullUp          |                       | Green Activity LED  |
 
 \* = Raspberry Pi 2 ONLY. GPIO 35 & 47 are not available on Raspberry Pi 3.
 
@@ -177,7 +177,7 @@ Let's look at the I2C bus available on this device.
 
 There is one I2C controller **I2C1** exposed on the pin header with two lines **SDA** and **SCL**. 1.8K&#x2126; internal pull-up resistors are already installed on the board for this bus.
 
-{:.table.table-bordered}
+
 | Signal Name | Header Pin Number | Gpio Number |
 |-------------|-------------------|-------------|
 | SDA         | 3                 | 2           |
