@@ -132,8 +132,8 @@ public sealed partial class MainPage : Page
 
     // 01101000 channel configuration data for the MCP3002
     private const byte MCP3002_CONFIG = 0x68;
-    // 00001000 channel configuration data for the MCP3008
-    private const byte MCP3008_CONFIG = 0x08;
+    // 00001000 channel configuration data for the MCP3208
+    private const byte MCP3208_CONFIG = 0x28;
     // 00001000 channel configuration data for the MCP3008
     private const byte MCP3008_CONFIG = 0x08;
 
