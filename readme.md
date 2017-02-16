@@ -63,7 +63,7 @@ For all the requirements, here is a list:
 
 > Note: While you setup Visual Studio, ensure you do Custom install and select the checkbox ‘Universal Windows App Development Tools –> Tools for Windows SDK’. 
 
-In case you have previously setup **Visual Studio 2015/2017** and **Universal Windows Apps templates** are missing, you would either need to start the Visual Studio Setup again –> Repair, then select the Universal Windows App Dev. Tools. Or try installing the missing SDK here. 
+In case you have previously setup **Visual Studio 2015/2017** and **Universal Windows Apps templates** are missing, you would either need to start the Visual Studio Setup again –> Modify, then select the Universal Windows App Dev. Tools. Or try installing the missing SDK here. 
 Windows IoT Core Project Templates. You can download them from [here](https://visualstudiogallery.msdn.microsoft.com/55b357e1-a533-43ad-82a5-a88ac4b01dec). Alternatively, the templates can be found by searching for Windows IoT Core Project Templates in the [Visual Studio Gallery](https://visualstudiogallery.msdn.microsoft.com/) or directly from Visual Studio in the Extension and Updates dialog (Tools > Extensions and Updates > Online). 
 Make sure you’ve enabled developer mode in Windows 10 by following [these instructions](https://msdn.microsoft.com/library/windows/apps/xaml/dn706236.aspx).
  
