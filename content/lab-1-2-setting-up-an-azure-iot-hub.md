@@ -88,4 +88,4 @@ Back to [IoT Labs homepage](/readme.md#labs)
 ![9gag Potato](/images/potato04.jpg)
 
 [nextlab]: /content/lab-1-3-sending-telemetry-to-the-cloud.md
-[deviceexplorer]: https://github.com/Azure/azure-iot-sdk-csharp/blob/master/tools/DeviceExplorer/doc/how_to_use_device_explorer.md
+[deviceexplorer]: https://github.com/Azure/azure-iot-sdks/releases
