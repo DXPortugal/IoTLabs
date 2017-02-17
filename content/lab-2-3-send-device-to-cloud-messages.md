@@ -48,7 +48,7 @@ Update the `arm-template-param.json` file in Visual Studio Code.
 After you update the `arm-template-param.json` file, deploy the resources to Azure by running the following command:
 
 ```bash
-azure group deployment create -f "arm-template.json" -e "arm-template-param.json" -g **NameOfResourceGroup**"
+azure group deployment create -f "arm-template.json" -e "arm-template-param.json" -g **NameOfResourceGroup**
 ```
 
 It takes about five minutes to create these resources. While the resource creation is in progress, you can move on to the next article.
