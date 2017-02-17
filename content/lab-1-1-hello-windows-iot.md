@@ -3,7 +3,7 @@
 In this lab you will create a simple *Thing* using the Universal Windows Platform on a Windows 10 IoT device. 
 
 ## Wire Up the Device
-The Raspberry Pi 3 connects to the physical world through the GPIO pins. GPIO stands for General Purpose Input/Output and refers to the two rows of pins on the Raspberry Pi 3. The GPIO pins are a physical interface between the Raspberry Pi 3 and the physical world. Through your app you can designate pins to either receive input or send output. The inputs can be from switches, sensors or other devices. The outputs can be LEDs, servos, motors or countless other devices. Twenty-six of the 40 pins are GPIO pins; the others are power, ground, or reserved pins.
+The Raspberry Pi 3 connects to the physical world through the GPIO pins. GPIO stands for General Purpose Input/Output and refers to the two rows of pins on the Raspberry Pi 3. The GPIO pins are a physical interface between the Raspberry Pi 3 and the physical world. Through your app you can designate pins to either receive input or send output. The inputs can be from switches, sensors or other devices. The outputs can be LEDs, servos, motors or countless other devices. Twenty-four of the 40 pins are GPIO pins; the others are power, ground, or reserved pins.
 
 ![Raspberry Pi 3 pin Map](/images/labs-rp2-pinout.png)
 
