@@ -70,11 +70,15 @@ Each device that sends messages to your IoT hub and receives messages from your 
 Run the following command:
 
 ```bash
-# For Windows command prompt
-azure iot device create --device-id myraspberrypi --hub-name {my hub name} --x509 --output-dir %USERPROFILE%\.iot-hub-getting-started
- 
-# For macOS or Ubuntu
-azure iot device create --device-id myraspberrypi --hub-name {my hub name} --x509 --output-dir ~/.iot-hub-getting-started
+npm i -g iothub-explorer
+```
+
+```bash
+iothub-explorer login **AddConnectionString**
+```
+
+```bash
+iothub-explorer create **NameOfDevice*
 ```
 
 ### Summary
