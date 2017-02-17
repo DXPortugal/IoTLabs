@@ -7,7 +7,7 @@ In a browser, navigate to the Azure Portal at [https://portal.azure.com](https:/
 
 1. Click on the **New** menu option in the upper-left.
 2. Select **Internet of Things**.
-3. Select **Azure IoT Hub**.
+3. Select **IoT Hub**.
 4. Give it a name. (e.g. your name followed by *iot-labs*). 
 5. Select or create a new **Resource Group**.
 6. Select a location. Choose the one closest to your physical location (ex: North Europe).
