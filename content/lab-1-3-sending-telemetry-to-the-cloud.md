@@ -24,7 +24,7 @@ As the photoresistor increases its resistance (lower light intensity) more of th
 
 In short, the darker it is, the more resistance the photoresistor provides and the more voltage is diverted to the ADC.
 
-Following is the wiring diagram for this circuit. Select the ADC you have and take a minute to identify the circuit on the board.
+The next image is the wiring diagram for this circuit. Select the ADC you have and take a minute to identify the circuit on the board.
 
 **MCP3002 - 10-bit, 2-channel ADC**
 
@@ -191,7 +191,7 @@ private void MainPage_Unloaded(object sender, RoutedEventArgs e)
 ```
 
 ## Initialize the SPI and GPIO Busses
-Still in the *ManPage()* constructor, add a call to a new method named **InitAllAsync()**. 
+Still in the *MainPage()* constructor, add a call to a new method named **InitAllAsync()**. 
 
 ```csharp
 public MainPage()
