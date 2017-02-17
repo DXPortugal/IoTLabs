@@ -21,7 +21,7 @@ Open a new browser tab and navigate to [https://portal.azure.com](https://portal
  - REGION: If you created your IoT Hub in *East US*, select **East US 2**. For other regions, select the same region you created your IoT Hub in.
  - REGIONAL MONITORING STORAGE ACCOUNT: Select or create a storage account.
 
-![Defining a new Stream Analytics job](/images/newasa.png)
+![Defining a new Stream Analytics job](../images/newasa.png)
 
 2. Click *CREATE STREAM ANALYTICS JOB*. It will take a few minutes for the Steam Analytics job to get created and become available. 
 
