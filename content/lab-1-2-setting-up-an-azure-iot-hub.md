@@ -15,11 +15,12 @@ In a browser, navigate to the Azure Portal at [https://portal.azure.com](https:/
 ![Create an IoT Hub](/images/lab2_rpi2-new-iot-hub.png)
   
 Once the IoT Hub is created, 
-
+ 
 1. Navigate into the IoT Hub.
-2. Click on the *key* icon at the top of the blade.
-3. In the next blade, click on the **iothubowner** entry.
-4. Copy the **Connection string-primary key** to your clipboard.
+2. Click on the *key* icon (Shared Access Policies) at the top of the blade.
+3. If no Policies appear, wait a little while (they are the last thing to be created)
+4. In the next blade, click on the **iothubowner** entry.
+5. Copy the **Connection string-primary key** to your clipboard.
 
 ![Get the IoT Hub Owner Connection String](/images/lab1_rpi2-azure-iot-connection-string.png)
 
