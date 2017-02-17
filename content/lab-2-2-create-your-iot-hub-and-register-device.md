@@ -19,6 +19,12 @@ In this article, you will learn:
 ### Create your IoT hub
 Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To create your IoT hub, follow these steps:
 
+1. Install Azure CLI by running the following command:
+
+   ```bash
+   npm install -g azure-cli
+   ```
+
 1. Sign in to your Azure account by running the following command:
 
    ```bash
@@ -33,7 +39,7 @@ Azure IoT Hub helps you connect, monitor, and manage millions of IoT assets. To 
    azure account set {subscription id or name}
    ```
 
-   `subscription ID or name` can be found in the output of the `az login` or the `az account list` command.
+   `subscription ID or name` can be found in the output of the `azure login` or the `azure account list` command.
 
 3. Register the provider by running the following command. Resource providers are services that provide resources for your application. You must register the provider before you can deploy the Azure resource that the provider offers.
 
