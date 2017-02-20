@@ -11,11 +11,11 @@ input data stream as the data coming from your IoT Hub. Next you will define an 
 will write a SQL-like query that collects data coming in on the input stream and routes it to the output stream. 
 
 ## Create the Stream Analytics Job
-Open a new browser tab and navigate to [https://portal.azure.com](https://portal.azure.com). Login if necessary. Click on the **NEW** icon in the lower-left corner.
+Open a new browser tab and navigate to [https://portal.azure.com](https://portal.azure.com). Login if necessary. Click on the **NEW** icon in the upper-left corner.
 
 ![Windows Azure Portal v1](/images/photon_lab07_5.png)
 
-1. Select **DATA SERVICES** > **STREAM ANALYTICS** > **QUICK CREATE** and enter the following:
+1. Select **DATA SERVICES** > **STREAM ANALYTICS JOBS** > **QUICK CREATE** and enter the following:
 
  - JOB NAME: You can use any name you like. (e.g. **iotlab**)
  - REGION: If you created your IoT Hub in *East US*, select **East US 2**. For other regions, select the same region you created your IoT Hub in.
@@ -36,19 +36,17 @@ The data will come in as a data stream from the Event Hub that was automatically
 
 ![Create the input](/images/asainputs.png)
 
-2. Click on *ADD AN INPUT*.
-3. Select **Data stream** and click on the forward arrow in the lower-right.
-4. Select **IoT Hub** and click on the forward arrow in the lower-right.
-5. Complete the form as follows:
+2. Click on *ADD*.
+3. Complete the form as follows:
 
  - INPUT ALIAS - **DeviceInputStream**
+ - Select **Data stream** in the Source Type.
+ - Select **IoT Hub** in the Source option.
  - SUBSCRIPTION - Choose your subscription.
  - CHOOSE AN IOT HUB - Choose the IoT Hub you created earlier.
- - IOT HUB SHARED ACCESS POLICY NAME - Leave this as the default, which should be *iothubowner*.
- - IOT HUB CONSUMER GROUP - Select *Create a new consumer group* and name it **AnalyticsConsumerGroup**.
-
-6. Click on the forward arrow in the lower-right.
-7. On the *Serialization settings* form, leave the defaults (Event Serialization Format:JSON and Encoding:UTF8) click on the checkmark in the lower-right. 
+ - SHARED ACCESS POLICY NAME - Leave this as the default, which should be *iothubowner*.
+ - CONSUMER GROUP - Select $Default.
+ - Leave the defaults options on the rest of the form options (Event Serialization Format:JSON and Encoding:UTF8) and click on Create. 
 
 ![Stream Analytics input definition](/images/asainputform.png)
 
@@ -61,8 +59,8 @@ Before defining the query that will select data from the input and send it to th
 
 ![Create the output](/images/asaoutputs.png)
 
-2. Click on **ADD AN OUTPUT**.
-3. Select **Power BI** and click on the forward arrow in the lower-right.
+2. Click on **ADD**.
+3. Select **Power BI** on the Sink option.
 4. Follow the instructions for either *Existing Microsoft Power BI User* or *New User* using your **@microsoft.com** email account.
 
 <blockquote>
@@ -76,9 +74,8 @@ Outlook.com, Hotmail.com, GMail.com or other general email provider accounts.
  - OUTPUT ALIAS - **DeviceBI**
  - DATASET NAME - **MyIoTDataSet**
  - TABLE NAME - **MyIoTDataTable**
- - GROUP NAME - **My Workplace**
 
-6. Click on the checkmark in the lower-right.
+6. Click on "Create"
 
 ![Stream Analytics output definition](/images/asaoutputform.png)
 
@@ -109,21 +106,20 @@ GROUP BY
     TumblingWindow (second, 5), deviceId, location 
 ```
 
-3. Click *SAVE* in the lower middle of the screen. 
-4. Once the query is saved, click *START* to start the Stream Analytics job. 
+3. Click *SAVE* in the upper middle of the screen. 
+4. Once the query is saved, click on the Overview header and click *START* to start the Stream Analytics job. 
 
 If your app from the [previous lab](../sending-telemetry/) isn't still running, go ahead and start it up. It will take a few minutes for the Stream Analytics job to get started and to start sending data to Power BI, but you should see *MyIoTDataSet* show up in Power BI within a few minutes. Remember, the *TumblingWindow* is set to 5-seconds, so PowerBI will only update every 5-seconds.
 
 # Build Reports in Power BI
-Go back to the browser tab where you have Power BI open. Look in the *Datasets* node in the left-hand navigation. The *MyIoTDataSet* should appear there within a few minutes of IoT Hub data streaming into the Stream Analytics job. 
+Go back to the browser tab where you have Power BI open (if it's not open, open the http://app.powerbi.com). Look in the *Datasets* node in the left-hand navigation. The *MyIoTDataSet* should appear there within a few minutes of IoT Hub data streaming into the Stream Analytics job. 
 
 1. Click on the *MyIoTDataSet* dataset to open the report designer.
-2. Select the **Line** chart from the *Visualizations* toolbox on the right side.
+2. Select the **Line** chart (first from second row) from the *Visualizations* toolbox on the right side.
 3. Select **maxdark** to set it as the *Value*.
 4. Click on the dropdown arrow for *maxdark* in the *Values* box and select **Maximum**.
-5. Select **timestamp** to set it as the *Axis*.
-
-Repeat steps 2-4 for **avgdark** and **mindark**, changing their field type to **Average** and **Minimum** respectively.
+5. Repeat steps 2-4 for **avgdark** and **mindark**, changing their field type to **Average** and **Minimum** respectively.
+6. Select **timestamp** to set it as the *Axis*.
 
 ![Create the Power BI report](/images/lab1_powerbi01.png)
 
