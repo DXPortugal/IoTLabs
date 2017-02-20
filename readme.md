@@ -60,6 +60,7 @@ As a requirement, we ask you to bring you laptop! If you have a macOS, you won't
 For all the requirements, here is a list:
 * Windows 10 (build 10240) or better 
 * Visual Studio 2015 – Community edition is sufficient, Enterprise and Professional works. 
+* Visual Studio Code
 
 > Note: While you setup Visual Studio, ensure you do Custom install and select the checkbox ‘Universal Windows App Development Tools –> Tools for Windows SDK’. 
 
