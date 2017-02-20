@@ -13,7 +13,7 @@ will write a SQL-like query that collects data coming in on the input stream and
 ## Create the Stream Analytics Job
 Open a new browser tab and navigate to [https://portal.azure.com](https://portal.azure.com). Login if necessary. Click on the **NEW** icon in the upper-left corner.
 
-![Windows Azure Portal v1](/images/photon_lab07_5.png)
+![Windows Azure Portal v1](/images/lab1_asa_new.png)
 
 1. Select **DATA SERVICES** > **STREAM ANALYTICS JOBS** > **QUICK CREATE** and enter the following:
 
@@ -21,11 +21,11 @@ Open a new browser tab and navigate to [https://portal.azure.com](https://portal
  - REGION: If you created your IoT Hub in *East US*, select **East US 2**. For other regions, select the same region you created your IoT Hub in.
  - REGIONAL MONITORING STORAGE ACCOUNT: Select or create a storage account.
 
-![Defining a new Stream Analytics job](../images/newasa.png)
+![Defining a new Stream Analytics job](/images/lab1_asa_config.png)
 
 2. Click *CREATE STREAM ANALYTICS JOB*. It will take a few minutes for the Steam Analytics job to get created and become available. 
 
-![Creating a new Stream Analytics job](/images/asajobcreated.png)
+![Creating a new Stream Analytics job](/images/lab1_asa_created.png)
 
 When the job indicates that it is created, click into it to create the data streams and query. Once you are in the Stream Analytics job you will need to define the job input, query and output. 
 
@@ -34,7 +34,7 @@ The data will come in as a data stream from the Event Hub that was automatically
 
 1. Click on the **INPUTS** header.
 
-![Create the input](/images/asainputs.png)
+![Create the input](/images/lab1_asa_newinputs.png)
 
 2. Click on *ADD*.
 3. Complete the form as follows:
@@ -48,7 +48,7 @@ The data will come in as a data stream from the Event Hub that was automatically
  - CONSUMER GROUP - Select $Default.
  - Leave the defaults options on the rest of the form options (Event Serialization Format:JSON and Encoding:UTF8) and click on Create. 
 
-![Stream Analytics input definition](/images/asainputform.png)
+![Stream Analytics input definition](/images/lab1_asa_inputconfig.png)
 
 After a few seconds, a new input will be listed.
 
@@ -57,7 +57,7 @@ Before defining the query that will select data from the input and send it to th
 
 1. Click on the *OUTPUTS* header.
 
-![Create the output](/images/asaoutputs.png)
+![Create the output](/images/lab1_asa_newoutput.png)
 
 2. Click on **ADD**.
 3. Select **Power BI** on the Sink option.
@@ -77,14 +77,14 @@ Outlook.com, Hotmail.com, GMail.com or other general email provider accounts.
 
 6. Click on "Create"
 
-![Stream Analytics output definition](/images/asaoutputform.png)
+![Stream Analytics output definition](/images/lab1_asa_outputconfig.png)
 
 ### Write the Query
 In the query, you want to select data from the input stream and put it into the output stream. With data like *darkness* you can do interesting things like apply operations on the data as you query it. For this example, you will write a query that selects from the input stream and sends the output stream the minimum, maximum, and average darkness values across all devices. You will be able to group the data by either location or device ID. Using a <code>TumblingWindow</code> you will send data to the output stream in rolling increments of 5-seconds.
 
 1. Click on the *QUERY* header.
 
-![Create the query](/images/asaquery.png)
+![Create the query](/images/lab1_asa_queryconfig.png)
 
 2. Write the following query:
 
