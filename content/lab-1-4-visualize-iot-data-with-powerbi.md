@@ -18,12 +18,13 @@ Open a new browser tab and navigate to [https://portal.azure.com](https://portal
 1. Select **DATA SERVICES** > **STREAM ANALYTICS JOBS** > **QUICK CREATE** and enter the following:
 
  - JOB NAME: You can use any name you like. (e.g. **iotlab**)
- - REGION: If you created your IoT Hub in *East US*, select **East US 2**. For other regions, select the same region you created your IoT Hub in.
- - REGIONAL MONITORING STORAGE ACCOUNT: Select or create a storage account.
-
+ - SUBSCRIPTION: Validate the correct subscription is selected. If using and Azure pass the name should be **Azure Pass**.
+ - RESOURCE GROUP: All this services should be grouped in a single Resource Group. It's not mandatory, but it will help you keep your subscription organized.
+ - LOCATION: If you created your IoT Hub in *North Europe*, select **North Europe**. For other regions, select the same region you created your IoT Hub in.
+ 
 ![Defining a new Stream Analytics job](/images/lab1_asa_config.png)
 
-2. Click *CREATE STREAM ANALYTICS JOB*. It will take a few minutes for the Steam Analytics job to get created and become available. 
+2. Click **CREATE**. It will take a few minutes for the Steam Analytics job to get created and become available. 
 
 ![Creating a new Stream Analytics job](/images/lab1_asa_created.png)
 
@@ -32,21 +33,22 @@ When the job indicates that it is created, click into it to create the data stre
 ## Define the Input Data Stream
 The data will come in as a data stream from the Event Hub that was automatically created when you created the Azure IoT Hub. 
 
-1. Click on the **INPUTS** header.
+1. Click on the **INPUTS** tab, inside JOB TOPOLOGY section.
 
 ![Create the input](/images/lab1_asa_newinputs.png)
 
-2. Click on *ADD*.
+2. An empty list of inputs will be presented. Let's click on **ADD**, on the top of the current blade.
 3. Complete the form as follows:
 
- - INPUT ALIAS - **DeviceInputStream**
- - Select **Data stream** in the Source Type.
- - Select **IoT Hub** in the Source option.
- - SUBSCRIPTION - Choose your subscription.
- - CHOOSE AN IOT HUB - Choose the IoT Hub you created earlier.
+ - INPUT ALIAS - Name your output with something allusive to the input. For example **iotlabsASAinput**
+ - Select **Data stream** in the SOURCE TYPE.
+ - Select **IoT Hub** in the SOURCE option.
+ - SUBSCRIPTION - Choose your subscription. You have the option 'Use IoT hub from current subscription'.
+ - IoT HUB - Specify the name of the IoT Hub you created earlier.
+ - Leave the ENDPOINT option on the default : **Messaging**. 
  - SHARED ACCESS POLICY NAME - Leave this as the default, which should be *iothubowner*.
  - CONSUMER GROUP - Select $Default.
- - Leave the defaults options on the rest of the form options (Event Serialization Format:JSON and Encoding:UTF8) and click on Create. 
+ - Leave the defaults options on the rest of the form options (Event Serialization Format:**JSON** and Encoding:**UTF8**) and click on Create. 
 
 ![Stream Analytics input definition](/images/lab1_asa_inputconfig.png)
 
@@ -55,13 +57,13 @@ After a few seconds, a new input will be listed.
 ## Define the Output Data Stream
 Before defining the query that will select data from the input and send it to the output you need to define the output. You will output the results of the query to a Power BI dataset for reporting.
 
-1. Click on the *OUTPUTS* header.
+1.  Click on the **OUTPUTS** tab, inside JOB TOPOLOGY section.
 
 ![Create the output](/images/lab1_asa_newoutput.png)
 
-2. Click on **ADD**.
+2. An empty list of outputs will be presented. Let's click on **ADD**, on the top of the current blade.
 3. Select **Power BI** on the Sink option.
-4. Follow the instructions for either *Existing Microsoft Power BI User* or *New User* using your **@microsoft.com** email account.
+4. Follow the instructions for either *Existing Microsoft Power BI User* or *New User* using your **@*.onmicrosoft.com** email account.
 
 <blockquote>
 Power BI is a data visualization toolkit for organizations. To create a new user account, you will have to use an account that belongs to an 
@@ -71,9 +73,9 @@ Outlook.com, Hotmail.com, GMail.com or other general email provider accounts.
 
 5. After you have authorized the connection to Power BI, complete the form as follows:
 
- - OUTPUT ALIAS - **DeviceBI**
- - DATASET NAME - **MyIoTDataSet**
- - TABLE NAME - **MyIoTDataTable**
+ - OUTPUT ALIAS - Name your output with something allusive to the output. For example **iotlabsASAoutput**.
+ - DATASET NAME - Name your dataset. For example **iotlabsDataset**.
+ - TABLE NAME - Name your table. For example **iotlabsTable**.
 
 6. Click on "Create"
 
@@ -82,7 +84,7 @@ Outlook.com, Hotmail.com, GMail.com or other general email provider accounts.
 ### Write the Query
 In the query, you want to select data from the input stream and put it into the output stream. With data like *darkness* you can do interesting things like apply operations on the data as you query it. For this example, you will write a query that selects from the input stream and sends the output stream the minimum, maximum, and average darkness values across all devices. You will be able to group the data by either location or device ID. Using a <code>TumblingWindow</code> you will send data to the output stream in rolling increments of 5-seconds.
 
-1. Click on the *QUERY* header.
+1. Click on the **QUERY** tab, inside JOB TOPOLOGY section.
 
 ![Create the query](/images/lab1_asa_queryconfig.png)
 
@@ -97,24 +99,24 @@ SELECT
     deviceId,
     System.Timestamp AS Timestamp
 INTO
-    [DeviceBI]
+    [iotlabsASAOutput]
 FROM
-    [DeviceInputStream]
+    [iotlabsASAinput]
 WHERE
     [messurementType] = 'darkness'
 GROUP BY
     TumblingWindow (second, 5), deviceId, location 
 ```
 
-3. Click *SAVE* in the upper middle of the screen. 
-4. Once the query is saved, click on the Overview header and click *START* to start the Stream Analytics job. 
+3. Click **SAVE** in the upper middle of the screen. 
+4. Once the query is saved, click on the Overview header and click **START** to start the Stream Analytics job. 
 
-If your app from the [previous lab](../sending-telemetry/) isn't still running, go ahead and start it up. It will take a few minutes for the Stream Analytics job to get started and to start sending data to Power BI, but you should see *MyIoTDataSet* show up in Power BI within a few minutes. Remember, the *TumblingWindow* is set to 5-seconds, so PowerBI will only update every 5-seconds.
+If your app from the [previous lab](/content/lab-1-3-sending-telemetry-to-the-cloud.md) isn't still running, go ahead and start it up. It will take a few minutes for the Stream Analytics job to get started and to start sending data to Power BI, but you should see **iotlabsDataset** show up in Power BI within a few minutes. Remember, the *TumblingWindow* is set to 5-seconds, so PowerBI will only update every 5-seconds.
 
 # Build Reports in Power BI
-Go back to the browser tab where you have Power BI open (if it's not open, open the http://app.powerbi.com). Look in the *Datasets* node in the left-hand navigation. The *MyIoTDataSet* should appear there within a few minutes of IoT Hub data streaming into the Stream Analytics job. 
+Go back to the browser tab where you have Power BI open (if it's not open, open the http://app.powerbi.com). Look in the *Datasets* node in the left-hand navigation. The **iotlabsDataset** should appear there within a few minutes of IoT Hub data streaming into the Stream Analytics job. 
 
-1. Click on the *MyIoTDataSet* dataset to open the report designer.
+1. Click on the **iotlabsDataset** dataset to open the report designer.
 2. Select the **Line** chart (first from second row) from the *Visualizations* toolbox on the right side.
 3. Select **maxdark** to set it as the *Value*.
 4. Click on the dropdown arrow for *maxdark* in the *Values* box and select **Maximum**.
