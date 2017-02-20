@@ -91,6 +91,8 @@ If you decide later that you want to add more licenses, you can go back to **Add
 You can now assign those licenses to your users. During the check out, it may have assigned the Power BI (free) licenses to all users that didn't have any licenses assigned. Learn more
 You can verify if the user has a license assigned to the account by going to **Users > Active Users** and selecting the user. On the right, you will see **Assigned License**.
 
+If getting into an issue, check this [video/walkthrough](http://bretstateham.com/using-power-bi-at-events/)!.
+
 ####Sign into Power BI
 You should now be able to sign into Power BI with the user you created in your custom directory.
 
