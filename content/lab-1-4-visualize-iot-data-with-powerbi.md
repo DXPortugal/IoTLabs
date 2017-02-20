@@ -48,7 +48,7 @@ The data will come in as a data stream from the Event Hub that was automatically
  - Leave the ENDPOINT option on the default : **Messaging**. 
  - SHARED ACCESS POLICY NAME - Leave this as the default, which should be *iothubowner*.
  - CONSUMER GROUP - Select $Default.
- - Leave the defaults options on the rest of the form options (Event Serialization Format:**JSON** and Encoding:**UTF8**) and click on Create. 
+ - Leave the defaults options on the rest of the form options (Event Serialization Format:**JSON** and Encoding:**UTF8**) and click on **Create**. 
 
 ![Stream Analytics input definition](/images/lab1_asa_inputconfig.png)
 
@@ -74,10 +74,12 @@ Outlook.com, Hotmail.com, GMail.com or other general email provider accounts.
 5. After you have authorized the connection to Power BI, complete the form as follows:
 
  - OUTPUT ALIAS - Name your output with something allusive to the output. For example **iotlabsASAoutput**.
+ - SINK - Although you have several options, let's select **Power BI**.
+ - GROUP WORKSPACE - These are groups inside Power BI, where you can collaborate creating dashboards, reports and datasets. Name a specific group workspace, or leave the selected option (default).
  - DATASET NAME - Name your dataset. For example **iotlabsDataset**.
  - TABLE NAME - Name your table. For example **iotlabsTable**.
 
-6. Click on "Create"
+6. Click on **"Create**.
 
 ![Stream Analytics output definition](/images/lab1_asa_outputconfig.png)
 
