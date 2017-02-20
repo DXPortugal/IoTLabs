@@ -71,6 +71,7 @@ organization, such as your place of employment. You will not be able to create a
 Outlook.com, Hotmail.com, GMail.com or other general email provider accounts.
 </blockquote>
 
+5. If you can't sign in into Power BI, you can sign up with a custom Azure Active Directory (AAD) tenant. Take a look at [this article](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-free-with-custom-azure-directory/) to learn how.
 5. After you have authorized the connection to Power BI, complete the form as follows:
 
  - OUTPUT ALIAS - Name your output with something allusive to the output. For example **iotlabsASAoutput**.
