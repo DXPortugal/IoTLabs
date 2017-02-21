@@ -77,7 +77,7 @@ azure iothub show-connection-string --name {my hub name} -g iot-sample
 * Get the device connection string by running the following command:
 
 ```bash
-az iot device show-connection-string --hub-name {my hub name} --device-id myraspberrypi -g iot-sample
+azure iothub device show-connection-string --hub-name {my hub name} --device-id myraspberrypi -g iot-sample
 ```
 
 Use `myraspberrypi` as the value of `{device id}` if you didn't change the value.
@@ -131,8 +131,8 @@ To read messages stored in your Azure Table storage, follow these steps:
 1. Get the connection string by running the following commands:
 
    ```bash
-   az storage account list -g iot-sample --query [].name
-   az storage account show-connection-string -g iot-sample -n {storage name}
+   azure storage account list -g iot-sample --query [].name
+   azure storage account show-connection-string -g iot-sample -n {storage name}
    ```
 
    The first command retrieves the `storage name` that is used in the second command to get the connection string. Use `iot-sample` as the value of `{resource group name}` if you didn't change the value.
