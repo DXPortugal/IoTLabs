@@ -132,8 +132,8 @@ To read messages stored in your Azure Table storage, follow these steps:
 1. Get the connection string by running the following commands:
 
    ```bash
-   az storage account list -g iot-sample --query [].name
-   az storage account show-connection-string -g iot-sample -n {storage name}
+   azure storage account list -g iot-sample
+   azure storage account connectionstring show -g iot-sample {storage name}
    ```
 
    The first command retrieves the `storage name` that is used in the second command to get the connection string. Use `iot-sample` as the value of `{resource group name}` if you didn't change the value.
