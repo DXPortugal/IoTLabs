@@ -95,7 +95,7 @@ If you have an MSDN Subscription you may be eligible for free credits to Microso
 
 ### [Portuguese Community](#portuguese-community)
 
-The maker community is growing everyday! From startups, freelancers to hobbbyists all Makers intend to discuss new ideas, how to prototype, share projects, select partners and suppliers, plan projects and event get funding. Here we leave you a way to participate in this community:
+The maker community is growing everyday! From startups, freelancers to hobbbyists all Makers intend to discuss new ideas, how to prototype, share projects, select partners and suppliers, plan projects and even get funding. Here we leave you a way to participate in this community:
 
  * [Facebook IoT Portugal Group](https://www.facebook.com/groups/IoTPortugal) - Facebook group for IoT related topics in Portugal.
  * [IoT Summit](http://www.iotsummit.pt/) - Portuguese community event for startups, freelancers and hobbyists. 
