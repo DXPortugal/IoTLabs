@@ -11,7 +11,7 @@ Wire the Raspberry Pi 3 to  the solderless breadboard as  described below.
 
 ![Blinky/Hello, World Wiring](/images/lab1_rpi2-hello-windows-bb.png)
 
-1. GPIO 12 is connected to the positive (longer) lead on the LED. In the app you will build in this workshop, you will control whether or not GPIO pin 12 sends voltage over the circuit.
+1. GPIO 12 is connected to the positive (longer) lead on the LED. In the app you will build in this workshop, you will control whether or not GPIO 12 sends voltage over the circuit.
 2. The negative (shorter) lead on the LED is connected to a resistor to reduce the amount of current pulled through the circuit.
 3. The other end of the resistor is connected to one of the ground GPIO pins, completing the circuit.
 
