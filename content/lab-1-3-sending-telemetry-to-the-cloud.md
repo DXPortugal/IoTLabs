@@ -260,7 +260,7 @@ Make sure that you added the <code>async</code> modifier to the method signature
 Go back to the *MainPage()* constructor 
 
 1. Use the Visual Studio light bulb feature to add the **InitSpiAsync()** method. 
-3. In this method you initialize the SPI buss so that you can use it to communicate through the ADC.
+3. In this method you initialize the SPI bus so that you can use it to communicate through the ADC.
 2. Modify the method signature to mark it as an async method and return a <code>Task</code>.
 
 ```csharp
