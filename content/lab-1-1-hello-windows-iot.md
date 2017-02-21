@@ -104,7 +104,7 @@ The LED connected to GPIO pin 12 will turn on and off at an interval defined by 
 
 ```csharp
 // Create an instance of a Timer that will raise an event every 500ms
-timer = new DispatcherTimer();
+DispatcherTimer timer = new DispatcherTimer();
 timer.Interval = TimeSpan.FromMilliseconds(500);
 timer.Tick += Timer_Tick;
 
