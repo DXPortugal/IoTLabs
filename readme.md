@@ -48,7 +48,7 @@ Here is the planned agenda!
 After a quick introduction on the Internet of Things, the IoT Labs will focus on the two key areas in IoT where Microsoft plays a role: IoT services in Azure and devices. We’ll cover IoT devices and get an overview of the popular development boards like Arduino, Netduino, Raspberry Pi … Besides using the traditional operating systems and development languages (Linux, C, Python …) for these boards, we’ll also explore the benefits that Windows 10 IoT can bring. 
 Before Lunch, we'll also cover the cloud services side. We’ll explore the typical IoT architecture and use Azure services such as Event Hubs/IoT Hub and Stream Analytics.  
 
-The hack begins! You'll have several labs to choose. We recommend you to go through the Labs. This are completely documented lab you can follow to get started. 
+The hack begins! You'll have several labs to choose. We recommend you to go through the Labs. Those are completely documented labs that you can follow to get started. 
 
 Afterwards, why not implement you own idea? Creativity is encouraged!
 
