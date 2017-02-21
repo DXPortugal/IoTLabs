@@ -39,6 +39,13 @@ You must have successfully completed [Send cloud-to-device messages](/content/la
      turnOffLED();
      break;
    ```
+   If you want to guarantee the LED is turned off when the execution is over you must change the case 'stop' statement to:
+      ```javascript
+    case 'stop':
+      stopReceivingMessage = true;
+      turnOffLED();
+      break;
+   ```
    
    Now you’ve configured the sample application to respond to more instructions through messages. The "on" instruction turns on the LED, and the "off" instruction turns off the LED.
 4. Open the gulpfile.js file, and then add a new function before the function `sendMessage`:
